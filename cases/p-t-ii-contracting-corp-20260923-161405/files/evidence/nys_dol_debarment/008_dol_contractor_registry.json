@@ -1,0 +1,35 @@
+[
+  {
+    "certificate_number": "26-64YJ8-CR",
+    "business_name": "P & T II CONTRACTING CORP.",
+    "business_type": "Corporation",
+    "business_is_mwbe_owned": "No",
+    "business_is_publicly_traded": "No",
+    "address": "10617 153rd Street",
+    "city": "Jamaica",
+    "state": "NY",
+    "zip_code": "11433",
+    "phone": "7182060210",
+    "issued_date": "2026-09-09T00:00:00.000",
+    "expiration_date": "2028-12-29T00:00:00.000",
+    "status": "Active",
+    "business_has_a_nys_dol_employer_registration_number": "Yes",
+    "business_has_a_wcb_employer_number": "Yes",
+    "business_has_outstanding_wage_assessments": "No",
+    "business_has_been_debarred": "No",
+    "business_has_final_determination_for_violation_of_labor_or_tax_law": "No",
+    "business_has_final_determination_safety_standard_violations": "No",
+    "business_is_associated_with_an_apprenticeship_program": "Yes",
+    "business_is_sponsor_of_a_program_": "No",
+    "business_is_signatory_to_a_group_program": "No",
+    "business_has_workers_compensation_insurance": "Yes",
+    "business_is_exempt_from_workers_compensation_insurance_": "No",
+    "georeference": {
+      "type": "Point",
+      "coordinates": [
+        -73.8002,
+        40.6954
+      ]
+    }
+  }
+]

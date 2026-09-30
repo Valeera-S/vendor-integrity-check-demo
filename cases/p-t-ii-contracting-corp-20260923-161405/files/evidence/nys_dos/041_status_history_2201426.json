@@ -1,0 +1,23 @@
+[
+  {
+    "corpid_num": "2201426",
+    "film_num": "971121000250",
+    "date_filed": "1997-11-21T00:00:00.000",
+    "mod_cert_code": "01DB A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "2201426",
+    "film_num": "991209002041",
+    "date_filed": "1999-12-09T00:00:00.000",
+    "mod_cert_code": "32DB A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "2201426",
+    "film_num": "011031002568",
+    "date_filed": "2001-10-31T00:00:00.000",
+    "mod_cert_code": "32DB A",
+    "status": "Active"
+  }
+]

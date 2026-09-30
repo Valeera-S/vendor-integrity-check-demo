@@ -1,0 +1,23 @@
+{
+  "transactionID": "",
+  "timestamp": "2026-09-23T12:14:09.3280163-04:00",
+  "requestStatus": "Success",
+  "resultIndicator": "EntityMatchFound",
+  "entitySearchResultList": [
+    {
+      "entityName": "P & T II CONTRACTING CORP.",
+      "dosID": "3305836",
+      "initialFilingDate": "2006-01-13T00:00:00",
+      "county": "Nassau",
+      "nameType": "ACTUAL",
+      "assumedNameID": "",
+      "nonQualifiedID": "",
+      "assumedName": "",
+      "entityType": "DOMESTIC BUSINESS CORPORATION",
+      "entityStatus": "Active",
+      "jurisdiction": "New York, United States",
+      "entityTypeCategory": "CORPORATION"
+    }
+  ],
+  "totalMatchingCount": 1
+}

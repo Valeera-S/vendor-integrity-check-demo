@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vendor Integrity Check</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body data-root="">
+<div class="proto-banner">Prototype. Every case on this site is a recorded run from the research tool on the date shown. Nothing is searched live here. Not an official City of New York service.</div>
+<header class="site-header">
+  <a class="brand" href="index.html">Vendor Integrity Check</a>
+  <nav class="site-nav">
+    <a href="index.html#check">New check</a>
+    <a href="cases/index.html">Past cases</a>
+    <a href="index.html#about">About</a>
+  </nav>
+</header>
+<main class="page">
+
+<section class="hero">
+  <h1>Screen a vendor against every public source on the RD checklist</h1>
+  <p>Enter the vendor and what PASSPort shows about its principals, parent and affiliates. The tool searches the state, city and federal sites on DDC's vetting checklist, scores every hit, saves every page, and drafts the PASSPort Sources table.</p>
+  <p><a class="button" href="#check">Start a check</a> <a class="button secondary" href="cases/index.html">Browse 4 recorded cases</a></p>
+</section>
+
+<section id="check" class="card">
+  <h2>New check</h2>
+  <p class="note">Decision support only. All findings must be verified by staff; the responsibility determination is made by the ACCO.</p>
+  <form id="check-form" method="post" action="#" data-demo-case="p-t-ii-contracting-corp-20260923-161405">
+    <label for="name">Company name *</label>
+    <input type="text" id="name" name="name" required value="P &amp; T II Contracting Corp.">
+    <label for="ein">EIN</label>
+    <input type="text" id="ein" name="ein" value="">
+    <label for="address">Street address</label>
+    <input type="text" id="address" name="address" value="106-17 153rd St">
+    <label for="city">City</label>
+    <input type="text" id="city" name="city" value="Jamaica">
+    <label for="state">State</label>
+    <input type="text" id="state" name="state" value="NY">
+    <label for="zip">ZIP</label>
+    <input type="text" id="zip" name="zip" value="">
+    <label for="principals">Principals</label>
+    <div>
+      <textarea id="principals" name="principals" rows="3" placeholder="First Last | address (one per line, address optional)">Lenny Pereira | 106-17 153rd St</textarea>
+      <div class="hint">One per line: "First Last" or "First Last | address".</div>
+    </div>
+    <label for="parent">Parent company</label>
+    <input type="text" id="parent" name="parent" value="">
+    <label for="affiliates">Affiliates / companies owned by principals</label>
+    <div><textarea id="affiliates" name="affiliates" rows="3" placeholder="One company name per line"></textarea></div>
+    <div class="full">
+      <label>Trades</label>
+      
+      <fieldset><legend>NYSED</legend>
+        
+        <label class="trade-option"><input type="checkbox" name="trades" value="architecture" > Architecture (NYSED)</label>
+        
+        <label class="trade-option"><input type="checkbox" name="trades" value="engineering" > Engineering (NYSED)</label>
+        
+        <label class="trade-option"><input type="checkbox" name="trades" value="land_surveying" > Land surveying (NYSED)</label>
+        
+        <label class="trade-option"><input type="checkbox" name="trades" value="landscape_architecture" > Landscape architecture (NYSED)</label>
+        
+        <label class="trade-option"><input type="checkbox" name="trades" value="geology" > Geology (NYSED)</label>
+        
+      </fieldset>
+      
+      <fieldset><legend>NYS DOL</legend>
+        
+        <label class="trade-option"><input type="checkbox" name="trades" value="asbestos" > Asbestos abatement or monitoring (NYS DOL)</label>
+        
+      </fieldset>
+      
+      <fieldset><legend>NYS DOS</legend>
+        
+        <label class="trade-option"><input type="checkbox" name="trades" value="security_guard" > Security guard company (NYS DOS)</label>
+        
+      </fieldset>
+      
+      <fieldset><legend>NYC DOB</legend>
+        
+        <label class="trade-option"><input type="checkbox" name="trades" value="electrical" > Electrical firm (NYC DOB)</label>
+        
+        <label class="trade-option"><input type="checkbox" name="trades" value="general_contractor" checked> General contractor (NYC DOB)</label>
+        
+        <label class="trade-option"><input type="checkbox" name="trades" value="plumbing" > Master plumber (NYC DOB)</label>
+        
+        <label class="trade-option"><input type="checkbox" name="trades" value="elevator" > Elevator agency (NYC DOB)</label>
+        
+        <label class="trade-option"><input type="checkbox" name="trades" value="rigging" > Rigger (NYC DOB)</label>
+        
+        <label class="trade-option"><input type="checkbox" name="trades" value="site_safety" > Site safety (NYC DOB)</label>
+        
+        <label class="trade-option"><input type="checkbox" name="trades" value="fire_suppression" > Fire suppression contractor (NYC DOB)</label>
+        
+        <label class="trade-option"><input type="checkbox" name="trades" value="hoisting" > Hoist machine operator (NYC DOB)</label>
+        
+      </fieldset>
+      
+      <fieldset><legend>FDNY</legend>
+        
+        <label class="trade-option"><input type="checkbox" name="trades" value="tank_installer" > Underground tank installer (FDNY)</label>
+        
+      </fieldset>
+      
+    </div>
+    <div class="full"><label><input type="checkbox" name="include_affiliates" value="1" checked> Auto-run discovered affiliates (NYS DOS registrations sharing a process agent or address)</label></div>
+    <div class="full"><label><input type="checkbox" name="use_browser" value="1" checked> Run browser-driven sources (NYS UCC lien search; adds about 20 seconds)</label></div>
+    <div class="full"><label><input type="checkbox" name="use_llm" value="1"> Use Claude to polish the draft wording</label></div>
+    <div class="full"><button type="submit" id="run-button">Run check</button> <span class="hint">A live run takes one to eight minutes depending on how many subjects are in the case. On this site the form opens the recorded run for the vendor.</span></div>
+  </form>
+  <div id="progress" class="progress" hidden>
+    <h3>Searching sources</h3>
+    <ul id="progress-list"></ul>
+    <p id="progress-status"></p>
+  </div>
+</section>
+
+<section id="sources" class="card">
+  <h2>Sources searched</h2>
+  
+  <h3>New York State</h3>
+  <ul class="source-grid">
+    
+    <li class="source-card" data-source="nys_dol_debarment">
+      <span class="source-kind kind-http">http</span>
+      <strong>NYS DOL and WCB debarment lists, EO-192 non-responsible entities, DOL contractor registry</strong>
+      <span class="source-id">nys_dol_debarment</span>
+      <p>NYS DOL 5-year prevailing wage debarments, WCB 1-year debarments, EO-192 non-responsible list, DOL contractor registry</p>
+      <a href="https://apps.labor.ny.gov/EDList/searchPage.do" target="_blank" rel="noopener">Open the site</a>
+    </li>
+    
+    <li class="source-card" data-source="nys_ucc">
+      <span class="source-kind kind-browser">browser</span>
+      <strong>NYS Department of State UCC and federal tax lien search</strong>
+      <span class="source-id">nys_ucc</span>
+      <p>NYS DOS UCC database, federal tax liens only; current through the date shown on the site</p>
+      <a href="https://ucc-efiling.dos.ny.gov/" target="_blank" rel="noopener">Open the site</a>
+    </li>
+    
+    <li class="source-card" data-source="nys_dos">
+      <span class="source-kind kind-api">api</span>
+      <strong>NYS Department of State, Division of Corporations</strong>
+      <span class="source-id">nys_dos</span>
+      <p>All NYS DOS entities, active and inactive; details from Open Data monthly extract</p>
+      <a href="https://apps.dos.ny.gov/publicInquiry/" target="_blank" rel="noopener">Open the site</a>
+    </li>
+    
+    <li class="source-card" data-source="nys_tax_warrant">
+      <span class="source-kind kind-http">http</span>
+      <strong>NYS Department of Taxation and Finance tax warrants (DOS notice system and Open Data)</strong>
+      <span class="source-id">nys_tax_warrant</span>
+      <p>DOS electronic warrant notices since 2004-01-08; Open Data warrants filed on or after 2025-07-01</p>
+      <a href="https://appext20.dos.ny.gov/stwarrants_public/st_search" target="_blank" rel="noopener">Open the site</a>
+    </li>
+    
+    <li class="source-card" data-source="nys_courts">
+      <span class="source-kind kind-manual">manual</span>
+      <strong>NYS Unified Court System, County Clerk filing and JDLS search (New York County)</strong>
+      <span class="source-id">nys_courts</span>
+      <p>New York County Clerk civil filing index and JDLS judgment search, including judgments where the NYS Commissioner of Labor is a party</p>
+      <a href="https://iapps.courts.state.ny.us/webccos/newyorkcc/countyFilingSearch" target="_blank" rel="noopener">Open the site</a>
+    </li>
+    
+  </ul>
+  
+  <h3>New York City</h3>
+  <ul class="source-grid">
+    
+    <li class="source-card" data-source="bic_denied">
+      <span class="source-kind kind-http">http</span>
+      <strong>NYC Business Integrity Commission trade waste denied companies</strong>
+      <span class="source-id">bic_denied</span>
+      <p>BIC list of companies denied a trade waste licence or registration</p>
+      <a href="https://www.nyc.gov/site/bic/industries/trade-waste-denied-companies.page" target="_blank" rel="noopener">Open the site</a>
+    </li>
+    
+    <li class="source-card" data-source="nyc_dob_disciplinary">
+      <span class="source-kind kind-api">api</span>
+      <strong>NYC Department of Buildings disciplinary actions and voluntary surrenders</strong>
+      <span class="source-id">nyc_dob_disciplinary</span>
+      <p>DOB Disciplinary Actions dataset on NYC Open Data (ndq3-kuef), mirrors the DOB web list</p>
+      <a href="https://www.nyc.gov/site/buildings/industry/disciplinary-actions-surrenders.page" target="_blank" rel="noopener">Open the site</a>
+    </li>
+    
+    <li class="source-card" data-source="nyc_acris">
+      <span class="source-kind kind-api">api</span>
+      <strong>NYC Department of Finance ACRIS personal property (UCC and federal liens)</strong>
+      <span class="source-id">nyc_acris</span>
+      <p>ACRIS personal property documents recorded in the five boroughs, updated through good_through_date.</p>
+      <a href="https://a836-acris.nyc.gov/DS/DocumentSearch/PartyName" target="_blank" rel="noopener">Open the site</a>
+    </li>
+    
+    <li class="source-card" data-source="nyc_oath_ecb">
+      <span class="source-kind kind-api">api</span>
+      <strong>NYC OATH hearings (ECB) and DOB-issued ECB violations</strong>
+      <span class="source-id">nyc_oath_ecb</span>
+      <p>OATH Hearings Division case status (all agencies) and DOB-issued ECB summonses</p>
+      <a href="https://a836-citypay.nyc.gov/citypay/ecb#!/name-address-form" target="_blank" rel="noopener">Open the site</a>
+    </li>
+    
+    <li class="source-card" data-source="nyc_sca">
+      <span class="source-kind kind-api">api</span>
+      <strong>NYC School Construction Authority disqualified, ineligible and suspended firms</strong>
+      <span class="source-id">nyc_sca</span>
+      <p>SCA Disqualified Firms list on NYC Open Data (krwf-eng6): Disqualified, Ineligible and Suspended vendors; empty &#39;to&#39; date means indefinite</p>
+      <a href="https://dobusiness.nycsca.org/Supplier/SearchDSISupplier.aspx?type=base&amp;linkType=Contract" target="_blank" rel="noopener">Open the site</a>
+    </li>
+    
+  </ul>
+  
+  <h3>Federal</h3>
+  <ul class="source-grid">
+    
+    <li class="source-card" data-source="sam">
+      <span class="source-kind kind-api">api</span>
+      <strong>SAM.gov exclusions (federal debarment and suspension)</strong>
+      <span class="source-id">sam</span>
+      <p>SAM.gov active exclusions, all classifications (firm, individual, special entity)</p>
+      <a href="https://sam.gov/search/?index=ex" target="_blank" rel="noopener">Open the site</a>
+    </li>
+    
+    <li class="source-card" data-source="osha">
+      <span class="source-kind kind-http">http</span>
+      <strong>US Department of Labor OSHA establishment inspections</strong>
+      <span class="source-id">osha</span>
+      <p>OSHA IMIS establishment search, all states, inspections opened within the configured look-back window (default 5 years)</p>
+      <a href="https://www.osha.gov/ords/imis/establishment.html" target="_blank" rel="noopener">Open the site</a>
+    </li>
+    
+  </ul>
+  
+  <h3>Trade licences</h3>
+  <ul class="source-grid">
+    
+    <li class="source-card" data-source="nyc_dob_bis">
+      <span class="source-kind kind-browser">browser</span>
+      <strong>NYC Department of Buildings BIS skilled trades licence search</strong>
+      <span class="source-id">nyc_dob_bis</span>
+      <p>NYC DOB BIS skilled-trade licensee/contractor roster; current as shown live on the site</p>
+      <a href="https://a810-bisweb.nyc.gov/bisweb/LicenseTypeServlet?vlfirst=N" target="_blank" rel="noopener">Open the site</a>
+    </li>
+    
+    <li class="source-card" data-source="fdny_tank_installers">
+      <span class="source-kind kind-http">http</span>
+      <strong>NYC Fire Department approved companies, underground tank installers</strong>
+      <span class="source-id">fdny_tank_installers</span>
+      <p>FDNY approved underground tank installer list (PDF, republished weekly)</p>
+      <a href="https://www.nyc.gov/assets/fdny/downloads/pdf/business/approved-companies-motor-fueled-installer.pdf" target="_blank" rel="noopener">Open the site</a>
+    </li>
+    
+    <li class="source-card" data-source="nys_asbestos">
+      <span class="source-kind kind-browser">browser</span>
+      <strong>NYS Department of Labor Asbestos Control Bureau, active asbestos contractors</strong>
+      <span class="source-id">nys_asbestos</span>
+      <p>NYS DOL report of active asbestos contractor licences</p>
+      <a href="https://biservices.labor.ny.gov/Reports/bi/?perspective=classicviewer&amp;pathRef=.public_folders%2FWPS%20Reports%2FActive%20Asbestos%20Contractors&amp;id=iEB741D9038A149129DCA85571AE53C50&amp;ui_appbar=false&amp;ui_navbar=false" target="_blank" rel="noopener">Open the site</a>
+    </li>
+    
+    <li class="source-card" data-source="nys_dos_licensing">
+      <span class="source-kind kind-http">http</span>
+      <strong>NYS Department of State, Division of Licensing Services (security guard companies)</strong>
+      <span class="source-id">nys_dos_licensing</span>
+      <p>NYS DOS licence status for security guard companies, with guard roster</p>
+      <a href="https://appext20.dos.ny.gov/lcns_public/chk_load" target="_blank" rel="noopener">Open the site</a>
+    </li>
+    
+    <li class="source-card" data-source="nysed_professions">
+      <span class="source-kind kind-api">api</span>
+      <strong>NYS Education Department, Office of the Professions licence verification</strong>
+      <span class="source-id">nysed_professions</span>
+      <p>NYSED Office of the Professions registration records for architecture, engineering, land surveying, landscape architecture, and geology business entities and individual licensees, as returned live by the site&#39;s search API</p>
+      <a href="https://eservices.nysed.gov/professions/verification-search" target="_blank" rel="noopener">Open the site</a>
+    </li>
+    
+  </ul>
+  
+</section>
+
+<section id="about" class="card">
+  <h2>About this site</h2>
+  <p>This is a static copy of the Vendor Integrity Check web form. The full tool runs on a staff workstation, searches each source live, and keeps a copy of every page it reads. The cases here were produced by that tool on the dates shown and copied as they were, including the evidence files and the Word report.</p>
+</section>
+
+</main>
+<footer class="site-footer">
+  <p>Vanderbilt University, AI-CPS Lab. Research prototype built for the NYC Department of Design and Construction.</p>
+  <p>Every case is a recorded run of public records. Site generated September 30, 2026, 22:05 UTC.</p>
+</footer>
+<script src="assets/manifest.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>

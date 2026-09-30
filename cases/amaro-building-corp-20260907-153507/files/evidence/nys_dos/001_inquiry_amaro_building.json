@@ -1,0 +1,23 @@
+{
+  "transactionID": "",
+  "timestamp": "2026-09-07T11:35:11.0700629-04:00",
+  "requestStatus": "Success",
+  "resultIndicator": "EntityMatchFound",
+  "entitySearchResultList": [
+    {
+      "entityName": "AMARO BUILDING CORP",
+      "dosID": "5450891",
+      "initialFilingDate": "2018-11-29T00:00:00",
+      "county": "Nassau",
+      "nameType": "ACTUAL",
+      "assumedNameID": "",
+      "nonQualifiedID": "",
+      "assumedName": "",
+      "entityType": "DOMESTIC BUSINESS CORPORATION",
+      "entityStatus": "Active",
+      "jurisdiction": "New York, United States",
+      "entityTypeCategory": "CORPORATION"
+    }
+  ],
+  "totalMatchingCount": 1
+}

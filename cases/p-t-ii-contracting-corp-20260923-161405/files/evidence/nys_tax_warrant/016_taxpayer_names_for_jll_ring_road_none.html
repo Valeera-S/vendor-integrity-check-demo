@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html">
+
+<TITLE>New York State Department of State</TITLE>
+      <SCRIPT LANGUAGE="JavaScript1.1" type="text/javascript">
+      function go_back() {
+        location="javascript:history.go(-1)";
+      }
+       function select_all() {
+        var x,i
+        x=document.warrant_search.p_name_checkbox.length;
+        for (i=0;i<x;i++)
+          document.warrant_search.p_name_checkbox[i].checked = true;
+       }
+
+
+function check_input()
+{
+   var x,i,lchecked;
+         x=document.warrant_search.p_name_checkbox.length;
+        lchecked=0;
+      if (x==undefined)
+                      {
+        if (document.warrant_search.p_name_checkbox.checked)
+               lchecked++;
+       }
+      else
+     {
+
+                 for (i=0;i<x;i++)
+                 {
+
+                       if (document.warrant_search.p_name_checkbox[i].checked)
+                        lchecked++;
+                 }
+
+       }
+       if (lchecked < 1)
+         {
+            window.alert("Please check at least one name and submit query.");
+            return false;
+         }
+       else
+       {
+           if (lchecked > 50)
+           {
+               window.alert("Please check 50 names or less and submit query.");
+               return false;
+           }
+           else
+           {
+              return true;
+           }
+       }
+      //window.alert(lchecked);
+
+ }
+      </script>
+</HEAD>
+
+
+<BODY BACKGROUND="/ucc_images/nborder.gif">
+
+
+<TABLE summary="for layout only" align=center border=0>
+  <TBODY>
+    <TR>
+       <TH align="center"><FONT size="+1"><strong>New York State Department of State</strong></FONT> </TH>
+    </TR>
+    <TR>
+      <TD align="center"><FONT size="+1"><strong>State Tax Warrant Notice System</strong></FONT></TD>
+    </TR>
+    <TR>
+       <TD align="center">Taxpayer Names</TD>
+    </TR>
+   </TBODY>
+</TABLE>
+<BR>
+<BR>
+
+
+<table summary="for layout only" border="0" align="center" width="625" cellpadding="10" bgcolor="lightgrey">
+      <tr><th align="left"><font size="-1">
+      <!--The following list includes the names that were found based on your search inputs. Each name listed has at least one State Tax Warrant Notice history that meets your search criteria. <strong>Click </strong>on the<strong> Name</strong> to display State Tax Warrant Notice histories for this name or check the desired names and <strong>click</strong> on the <strong>Submit Query</strong> Button.  If the name you are searching for is not listed or your search returns more than the 500 name limit, click the <strong>Back</strong> Button and revise your search criteria.-->
+      The following list includes the names that were found based on your search inputs. Each name listed has at least one State Tax Warrant Notice history that meets your search criteria. Click on the Name to display State Tax Warrant Notice histories for this name or check the desired names and click on the Submit Query Button. If the name you are searching for is not listed or your search returns more than the 500 name limit, click the Back Button and revise your search criteria.The following list includes the names that were found based on your search inputs. Each name listed has at least one State Tax Warrant Notice history that meets your search criteria. Click on the Name to display State Tax Warrant Notice histories for this name or check the desired names and click on the Submit Query Button. If the name you are searching for is not listed or your search returns more than the 500 name limit, click the Back Button and revise your search criteria.
+      </font>
+      </th></tr>
+</table>
+
+<BR><HR>
+<BR>
+
+ <TABLE border="1" align="center" width="95%">
+ <TR bgcolor="lightgrey">
+     <TH scope="col" width="20%" valign="top">Name of Taxpayer Searched</TH>
+     <TH scope="col" width="20%" valign="top">Search Type</TH>
+     <TH scope="col" width="20%" valign="top">Warrant Notice Status</TH>
+     <TH scope="col" width="20%" valign="top">City specified in warrant address record</TH>
+     <TH scope="col" width="20%" valign="top">County specified in warrant</TH>
+ </TR>
+ <TR >
+     <TD width="20%" align="center">JLL RING ROAD</TD>
+     <TD width="20%" align="center">Base Word</TD>
+     <TD width="20%" align="center">All</TD>
+     <TD width="20%" align="center">Not Applicable</TD>
+     <TD width="20%" align="center">Not Applicable </TD>
+ </TR>
+
+ </TABLE>
+
+
+ 
+<CENTER>  Your search on JLL RING ROAD has returned 0 name(s).
+
+
+<FORM ACTION="stw_warrants" Name="warrant_search" METHOD="POST" onsubmit="return check_input()" >
+<br>
+<br>
+
+<input type=hidden name="p_city" value="">
+<input type=hidden name="p_county" value="">
+<input type=hidden name="p_lapsed" value="0">
+
+
+<TABLE  ALIGN="CENTER"> 
+
+  </TABLE><label for="jsback" style="{color: white}">Back Button</label><BR>
+
+    <INPUT TYPE="button" id="jsback" NAME="goback" VALUE="Back" onClick="go_back()" alt="back button">
+<br><br></FORM>
+  <FONT size="-1">
+  [ <a href="http://www.dos.ny.gov/corps/index.html" target="_top">Division of Corporations, State Records and UCC Home Page</a> ]
+  [ <a href="http://www.dos.ny.gov" target="_top">NYS Department of State Home Page</a> ]
+  </font>
+</center></BODY></HTML> 

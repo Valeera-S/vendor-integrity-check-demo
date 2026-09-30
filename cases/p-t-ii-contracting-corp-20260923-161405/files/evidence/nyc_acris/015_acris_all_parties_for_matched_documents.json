@@ -1,0 +1,90 @@
+[
+  {
+    "document_id": "FT_4030007604403",
+    "record_type": "P",
+    "party_type": "2",
+    "name": "NORTH FORK BANK",
+    "address_1": "245  LOVE LANE",
+    "country": "US",
+    "city": "MATTITUCK",
+    "state": "NY",
+    "good_through_date": "2015-07-31T00:00:00.000"
+  },
+  {
+    "document_id": "FT_4030007604403",
+    "record_type": "P",
+    "party_type": "1",
+    "name": "P & T CONTRACTING CORP.",
+    "address_1": "31-99  123RD ST",
+    "country": "US",
+    "city": "FLUSHING",
+    "state": "NY",
+    "good_through_date": "2015-07-31T00:00:00.000"
+  },
+  {
+    "document_id": "FT_4400007267540",
+    "record_type": "P",
+    "party_type": "1",
+    "name": "P & T CONTRACTING CORP",
+    "address_1": "31-99  123 ST",
+    "country": "US",
+    "city": "FLUSHING",
+    "state": "NY",
+    "good_through_date": "2015-07-31T00:00:00.000"
+  },
+  {
+    "document_id": "FT_4400007267540",
+    "record_type": "P",
+    "party_type": "3",
+    "name": "CATERPILLAR FINANCIAL SERVICES CORP",
+    "address_1": "10440  LITTLE PATUXENT PARKWAY",
+    "country": "US",
+    "city": "COLUMBIA",
+    "state": "MD",
+    "good_through_date": "2015-07-31T00:00:00.000"
+  },
+  {
+    "document_id": "FT_4400007267540",
+    "record_type": "P",
+    "party_type": "2",
+    "name": "H.O. PENN MACHINERYCO INC",
+    "address_1": "122  NOXON ROAD",
+    "country": "US",
+    "city": "POUGHKEEPSIE",
+    "state": "NY",
+    "good_through_date": "2015-07-31T00:00:00.000"
+  },
+  {
+    "document_id": "FT_4660007659966",
+    "record_type": "P",
+    "party_type": "1",
+    "name": "P & T CONTRACTING CORP",
+    "address_1": "31-99  123ND ST",
+    "country": "US",
+    "city": "FLUSHING",
+    "state": "NY",
+    "good_through_date": "2015-07-31T00:00:00.000"
+  },
+  {
+    "document_id": "FT_4660007659966",
+    "record_type": "P",
+    "party_type": "3",
+    "name": "CATERPILLAR FINANCIAL SERVICES CORPORATION",
+    "address_1": "2120  WEST END AVE",
+    "country": "US",
+    "city": "NASHVILLE",
+    "state": "TN",
+    "good_through_date": "2015-07-31T00:00:00.000"
+  },
+  {
+    "document_id": "FT_4660007659966",
+    "record_type": "P",
+    "party_type": "2",
+    "name": "H.O. PENN MACHINERYCOMPANY, INC",
+    "address_1": "122  NOXON RD",
+    "country": "US",
+    "city": "POUGHKEEPSIE",
+    "state": "NY",
+    "good_through_date": "2015-07-31T00:00:00.000"
+  }
+]

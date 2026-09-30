@@ -1,0 +1,23 @@
+{
+  "transactionID": "",
+  "timestamp": "2026-09-23T12:15:15.8368564-04:00",
+  "requestStatus": "Success",
+  "resultIndicator": "EntityMatchFound",
+  "entitySearchResultList": [
+    {
+      "entityName": "JLL 93 SOUTH COUNTRY LLC",
+      "dosID": "5332681",
+      "initialFilingDate": "2018-05-01T00:00:00",
+      "county": "Queens",
+      "nameType": "ACTUAL",
+      "assumedNameID": "",
+      "nonQualifiedID": "",
+      "assumedName": "",
+      "entityType": "DOMESTIC LIMITED LIABILITY COMPANY",
+      "entityStatus": "Active",
+      "jurisdiction": "New York, United States",
+      "entityTypeCategory": "LIMITED LIABILITY COMPANY"
+    }
+  ],
+  "totalMatchingCount": 1
+}

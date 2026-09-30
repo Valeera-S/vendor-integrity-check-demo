@@ -1,0 +1,23 @@
+[
+  {
+    "corpid_num": "3305836",
+    "film_num": "060113000660",
+    "date_filed": "2006-01-13T00:00:00.000",
+    "mod_cert_code": "01DB A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "3305836",
+    "film_num": "240717001391",
+    "date_filed": "2024-07-17T00:00:00.000",
+    "mod_cert_code": "32DB A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "3305836",
+    "film_num": "260211000061",
+    "date_filed": "2026-02-11T00:00:00.000",
+    "mod_cert_code": "32DB A",
+    "status": "Active"
+  }
+]

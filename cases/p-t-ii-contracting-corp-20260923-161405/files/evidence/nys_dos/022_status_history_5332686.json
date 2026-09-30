@@ -1,0 +1,23 @@
+[
+  {
+    "corpid_num": "5332686",
+    "film_num": "180501000156",
+    "date_filed": "2018-05-01T00:00:00.000",
+    "mod_cert_code": "01DA A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "5332686",
+    "film_num": "210928002159",
+    "date_filed": "2021-09-28T00:00:00.000",
+    "mod_cert_code": "49DA A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "5332686",
+    "film_num": "260910002296",
+    "date_filed": "2026-09-10T00:00:00.000",
+    "mod_cert_code": "32DA A",
+    "status": "Active"
+  }
+]

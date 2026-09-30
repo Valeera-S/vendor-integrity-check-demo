@@ -1,0 +1,19 @@
+[
+  {
+    "document_id": "2019083000098003",
+    "record_type": "A",
+    "crfn": "2019000283951",
+    "recorded_borough": "4",
+    "doc_type": "FL",
+    "document_amt": "42799.55",
+    "recorded_datetime": "2019-09-05T00:00:00.000",
+    "fedtax_serial_nbr": "377905819",
+    "fedtax_assessment_date": "2019-08-12T00:00:00.000",
+    "rpttl_nbr": "0",
+    "modified_date": "2019-09-05T00:00:00.000",
+    "reel_yr": "0",
+    "reel_nbr": "0",
+    "reel_pg": "0",
+    "good_through_date": "2019-09-30T00:00:00.000"
+  }
+]

@@ -1,0 +1,1644 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tully Construction Co., Inc., Vendor Integrity Check</title>
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body data-root="../../">
+<div class="proto-banner">Prototype. Every case on this site is a recorded run from the research tool on the date shown. Nothing is searched live here. Not an official City of New York service.</div>
+<header class="site-header">
+  <a class="brand" href="../../index.html">Vendor Integrity Check</a>
+  <nav class="site-nav">
+    <a href="../../index.html#check">New check</a>
+    <a href="../../cases/index.html">Past cases</a>
+    <a href="../../index.html#about">About</a>
+  </nav>
+</header>
+<main class="page">
+
+<div class="case-layout">
+<aside class="toc" aria-label="Report sections">
+  <h2>On this page</h2>
+  <ul>
+    <li><a href="#source-status">Source Status</a></li><li><a href="#summary">Summary</a></li><li><a href="#findings">Findings</a></li><li><a href="#needs-review">Needs Review</a></li><li><a href="#related-non-adverse-filings">Related Non-Adverse Filings</a></li><li><a href="#passport-sources-table">PASSPort Sources Table</a></li><li><a href="#evidence-index">Evidence Index</a></li>
+  </ul>
+</aside>
+<article class="case">
+  <h1>Tully Construction Co., Inc.</h1>
+  <p class="meta">Recorded run from September 03, 2026, 05:55 UTC &middot; case tully-construction-co-inc-20260903-055519</p>
+  <p class="downloads">
+    <a class="button" href="files/report.docx">Download report.docx</a>
+    <a href="files/report.md">report.md</a>
+    <a href="files/run.json">run.json</a>
+  </p>
+
+  
+  <h2 id="subjects-strip">Subjects</h2>
+  <ul class="subjects-strip">
+    <li><a href="#subject-0">vendor: Tully Construction Co., Inc. (vendor)</a></li>
+  </ul>
+  
+
+  
+
+  
+  <div class="report"><h1>Vendor Integrity Check Report</h1>
+<p><strong>Subject:</strong> Tully Construction Co., Inc.<br />
+<strong>Address:</strong> Flushing, NY<br />
+<strong>Variants searched:</strong> TULLY CONSTRUCTION<br />
+<strong>Run:</strong> 2026-09-03T05:55:25.500033+00:00  ·  vic 0.1.0</p>
+<p>Decision support only. All findings must be verified by staff; the responsibility determination is made by the ACCO.</p>
+<h2 id="source-status">Source Status</h2>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Status</th>
+<th>Elapsed (s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NYS Department of State, Division of Corporations</td>
+<td>ok</td>
+<td>6.4</td>
+</tr>
+<tr>
+<td>NYS Department of Taxation and Finance tax warrants (DOS notice system and Open Data)</td>
+<td>ok</td>
+<td>4.1</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>ok</td>
+<td>6.0</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>ok</td>
+<td>2.5</td>
+</tr>
+<tr>
+<td>US Department of Labor OSHA establishment inspections</td>
+<td>ok</td>
+<td>1.4</td>
+</tr>
+</tbody>
+</table>
+<h2 id="summary">Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Result</th>
+<th>Coverage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NYS Department of State, Division of Corporations</td>
+<td>7 records, 0 adverse, 0 open</td>
+<td>All NYS DOS entities, active and inactive; details from Open Data monthly extract</td>
+</tr>
+<tr>
+<td>NYS Department of Taxation and Finance tax warrants (DOS notice system and Open Data)</td>
+<td>2 records, 2 adverse, 1 open</td>
+<td>DOS electronic warrant notices since 2004-01-08; Open Data warrants filed on or after 2025-07-01</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>341 records, 1 adverse, 1 open</td>
+<td>ACRIS personal property documents recorded in the five boroughs, updated through good_through_date.</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>980 records, 980 adverse, 21 open</td>
+<td>OATH Hearings Division case status (all agencies) and DOB-issued ECB summonses</td>
+</tr>
+<tr>
+<td>US Department of Labor OSHA establishment inspections</td>
+<td>5 records, 2 adverse, 1 open</td>
+<td>OSHA IMIS establishment search, all states, inspections opened within the configured look-back window (default 5 years)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="findings">Findings</h2>
+<h3>NYC OATH hearings (ECB) and DOB-issued ECB violations (nyc_oath_ecb)</h3>
+<h4>Open</h4>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Record ID</th>
+<th>Matched Name</th>
+<th>Status</th>
+<th>Amount</th>
+<th>Summary</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-08-23</td>
+<td>0704311603</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>NEW ISSUANCE</td>
+<td>$250.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704311603, 2026-08-23, FAILURE TO FULLY REPLACE DEFECTIVE SIDEWALK FLAG, penalty $250.00, NEW ISSUANCE</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-08-17</td>
+<td>0704305040</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>NEW ISSUANCE</td>
+<td>$750.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704305040, 2026-08-17, FAIL TO HAVE NECESSARY ID MARKINGS ON DOT REQUIRED SIGNS, penalty $750.00, NEW ISSUANCE</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-08-17</td>
+<td>0704305030</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>NEW ISSUANCE</td>
+<td>$750.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704305030, 2026-08-17, FAIL TO HAVE NECESSARY ID MARKINGS ON DOT REQUIRED SIGNS, penalty $750.00, NEW ISSUANCE</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-08-17</td>
+<td>0704305324</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>NEW ISSUANCE</td>
+<td>$1,500.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704305324, 2026-08-17, USE OPENING OF STREET W O PERMIT, penalty $1,500.00, NEW ISSUANCE</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-07-16</td>
+<td>0704270528</td>
+<td>TULLY CONSTRUCTION CO. INC.</td>
+<td></td>
+<td></td>
+<td>agency not stated summons 0704270528, 2026-07-16, charge not stated, penalty not yet assessed, no hearing status recorded</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-07-16</td>
+<td>0704270500</td>
+<td>TULLY CONSTRUCTION CO. INC.</td>
+<td></td>
+<td></td>
+<td>agency not stated summons 0704270500, 2026-07-16, charge not stated, penalty not yet assessed, no hearing status recorded</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-07-16</td>
+<td>0704270519</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>NEW ISSUANCE</td>
+<td>$750.00</td>
+<td>agency not stated summons 0704270519, 2026-07-16, charge not stated, penalty $750.00, NEW ISSUANCE</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-07-11</td>
+<td>0704263340</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>NEW ISSUANCE</td>
+<td>$250.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704263340, 2026-07-11, FAILURE TO FULLY REPLACE DEFECTIVE SIDEWALK FLAG, penalty $250.00, NEW ISSUANCE</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-07-10</td>
+<td>0704260738</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>NEW ISSUANCE</td>
+<td>$1,200.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704260738, 2026-07-10, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, NEW ISSUANCE</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-06-30</td>
+<td>0221107527</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>NEW ISSUANCE</td>
+<td>$1,200.00</td>
+<td>DEPT OF TRANSPORTATION summons 0221107527, 2026-06-30, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, NEW ISSUANCE</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-06-06</td>
+<td>0704226454</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>RESCHEDULED</td>
+<td>$750.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704226454, 2026-06-06, FAILED TO COMPLY W HIGHWAY RULES STANDARD SPECS. DETAIL DRAWINGS LAWS, penalty $750.00, RESCHEDULED</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-05-14</td>
+<td>0219476474</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>DEFAULTED</td>
+<td>$1,230.00</td>
+<td>DEPT OF TRANSPORTATION summons 0219476474, 2026-05-14, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,230.00, DEFAULTED</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-04-28</td>
+<td>0704188394</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>RESCHEDULED</td>
+<td>$750.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704188394, 2026-04-28, FAILED TO COMPLY W HIGHWAY RULES STANDARD SPECS. DETAIL DRAWINGS LAWS, penalty $750.00, RESCHEDULED</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2025-03-28</td>
+<td>001005539K</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>DEFAULTED</td>
+<td>$2,000.00</td>
+<td>DEP - BUREAU OF ENV. COMPLIANC summons 001005539K, 2025-03-28, IDLING OF MOTOR VEHICLE ENGINE MORE THAN THREE MINUTES 3RD AND SUB, penalty $2,000.00, DEFAULTED</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2025-03-25</td>
+<td>001004994H</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>DEFAULTED</td>
+<td>$1,000.00</td>
+<td>DEP - BUREAU OF ENV. COMPLIANC summons 001004994H, 2025-03-25, IDLING OF MOTOR VEHICLE ENGINE MORE THAN THREE MINUTES 1ST OFF, penalty $1,000.00, DEFAULTED</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2025-03-21</td>
+<td>001004055J</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>DEFAULTED</td>
+<td>$2,000.00</td>
+<td>DEP - BUREAU OF ENV. COMPLIANC summons 001004055J, 2025-03-21, IDLING OF MOTOR VEHICLE ENGINE MORE THAN THREE MINUTES 3RD AND SUB, penalty $2,000.00, DEFAULTED</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2024-04-13</td>
+<td>0703555481</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>NEW ISSUANCE</td>
+<td>$250.00</td>
+<td>DEPT OF TRANSPORTATION summons 0703555481, 2024-04-13, FAILURE TO REMOVE SAND, DIRT, RUBBISH, OR DEBRIS FROM SITE W I 7 DAYS, penalty $250.00, NEW ISSUANCE</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2023-06-15</td>
+<td>000786331J</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>NEW ISSUANCE</td>
+<td>$350.00</td>
+<td>DEP - BUREAU OF ENV. COMPLIANC summons 000786331J, 2023-06-15, IDLING OF MOTOR VEHICLE ENGINE MORE THAN THREE MINUTES 1ST OFF, penalty $350.00, NEW ISSUANCE</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2021-08-22</td>
+<td>0702769715</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>NEW ISSUANCE</td>
+<td>$250.00</td>
+<td>DEPT OF TRANSPORTATION summons 0702769715, 2021-08-22, NO STREET PROTECTION UNDER CONSTRUCTION MATERIAL EQUIPMENT, penalty $250.00, NEW ISSUANCE</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2019-01-02</td>
+<td>0701810670</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>ASSIGNED</td>
+<td>$1,200.00</td>
+<td>DEPT OF TRANSPORTATION summons 0701810670, 2019-01-02, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, ASSIGNED</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2010-08-16</td>
+<td>0169910108</td>
+<td>TULLY CONSTRUCTION COMPANY</td>
+<td>DEFAULTED</td>
+<td>$430.00</td>
+<td>POLICE DEPARTMENT summons 0169910108, 2010-08-16, FAILURE TO COMPLY WITH DOT STANDARD SPECIFICATIONS, penalty $430.00, DEFAULTED</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+</tbody>
+</table>
+<h4>Resolved</h4>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Record ID</th>
+<th>Matched Name</th>
+<th>Status</th>
+<th>Amount</th>
+<th>Summary</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-18</td>
+<td>0704209211</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$750.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704209211, 2026-05-18, FAIL TO HAVE NECESSARY ID MARKINGS ON DOT REQUIRED SIGNS, penalty $750.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-05-18</td>
+<td>0704209101</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$1,500.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704209101, 2026-05-18, USE OPENING OF STREET W O PERMIT, penalty $1,500.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-05-18</td>
+<td>0704209202</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$750.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704209202, 2026-05-18, FAIL TO HAVE NECESSARY ID MARKINGS ON DOT REQUIRED SIGNS, penalty $750.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-05-15</td>
+<td>0704204133</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$1,200.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704204133, 2026-05-15, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-05-15</td>
+<td>0704204160</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$1,200.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704204160, 2026-05-15, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-05-08</td>
+<td>0704197230</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$1,200.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704197230, 2026-05-08, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-05-08</td>
+<td>0704197890</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$1,200.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704197890, 2026-05-08, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-05-08</td>
+<td>0704197158</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$1,200.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704197158, 2026-05-08, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-05-08</td>
+<td>0704197084</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$1,200.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704197084, 2026-05-08, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-05-08</td>
+<td>0704196983</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$1,200.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704196983, 2026-05-08, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-05-07</td>
+<td>0704197102</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$1,200.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704197102, 2026-05-07, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-05-07</td>
+<td>0704197167</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$1,200.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704197167, 2026-05-07, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-05-07</td>
+<td>0704196790</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$1,200.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704196790, 2026-05-07, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-05-07</td>
+<td>0704197066</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$1,200.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704197066, 2026-05-07, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-05-05</td>
+<td>0704196608</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$500.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704196608, 2026-05-05, OBST OF HYDRT, BUS STOP, W CONSTR MATL THAT IMPAIRS PUBLIC SAFETY, penalty $500.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-05-05</td>
+<td>0704194911</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$1,200.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704194911, 2026-05-05, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-05-05</td>
+<td>0704194920</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$1,200.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704194920, 2026-05-05, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-04-22</td>
+<td>0704182885</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$1,500.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704182885, 2026-04-22, USE OPENING OF STREET W O PERMIT, penalty $1,500.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-04-22</td>
+<td>0704182849</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$750.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704182849, 2026-04-22, FAIL TO HAVE NECESSARY ID MARKINGS ON DOT REQUIRED SIGNS, penalty $750.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-04-22</td>
+<td>0704181830</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$750.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704181830, 2026-04-22, FAIL TO HAVE NECESSARY ID MARKINGS ON DOT REQUIRED SIGNS, penalty $750.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-04-15</td>
+<td>0221264524</td>
+<td>TULLY CONSTRUCTION INC</td>
+<td>PAID IN FULL</td>
+<td>$1,200.00</td>
+<td>NYPD TRANSPORT INTELLIGENCE DI summons 0221264524, 2026-04-15, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-03-31</td>
+<td>0704151571</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$1,500.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704151571, 2026-03-31, USE OPENING OF STREET W O PERMIT, penalty $1,500.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-03-23</td>
+<td>0704145393</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$1,500.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704145393, 2026-03-23, USE OPENING OF STREET W O PERMIT, penalty $1,500.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-03-23</td>
+<td>0704145384</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$750.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704145384, 2026-03-23, FAIL TO HAVE NECESSARY ID MARKINGS ON DOT REQUIRED SIGNS, penalty $750.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+<tr>
+<td>2026-03-23</td>
+<td>0704145375</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>PAID IN FULL</td>
+<td>$750.00</td>
+<td>DEPT OF TRANSPORTATION summons 0704145375, 2026-03-23, FAIL TO HAVE NECESSARY ID MARKINGS ON DOT REQUIRED SIGNS, penalty $750.00, PAID IN FULL</td>
+<td><a href="files/evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json">nyc_oath_ecb-001</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>914 more row(s) not shown; every record is in run.json and the evidence files.</em></p>
+<h3>US Department of Labor OSHA establishment inspections (osha)</h3>
+<h4>Open</h4>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Record ID</th>
+<th>Matched Name</th>
+<th>Status</th>
+<th>Amount</th>
+<th>Summary</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-09-19</td>
+<td>1851482.015</td>
+<td>Tully Construction Co., Inc.</td>
+<td>OPEN</td>
+<td>$5,000.00</td>
+<td>Inspection 1851482.015 opened 2025-09-19, Queens District Office, Fat/Cat, 1 other violations, current penalty $5,000, OPEN</td>
+<td><a href="files/evidence/osha/001_search_tully_construction.html">osha-001</a>, <a href="files/evidence/osha/002_detail_1851482_015.html">osha-002</a></td>
+</tr>
+</tbody>
+</table>
+<h4>Resolved</h4>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Record ID</th>
+<th>Matched Name</th>
+<th>Status</th>
+<th>Amount</th>
+<th>Summary</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023-05-12</td>
+<td>1669813.015</td>
+<td>Tully Construction Corporation</td>
+<td>CLOSED</td>
+<td>$6,563.00</td>
+<td>Inspection 1669813.015 opened 2023-05-12, Springfield Area Office, Prog Related, 2 serious violations, current penalty $6,563, CLOSED 2024-01-17</td>
+<td><a href="files/evidence/osha/001_search_tully_construction.html">osha-001</a>, <a href="files/evidence/osha/005_detail_1669813_015.html">osha-005</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="needs-review">Needs Review</h2>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Date</th>
+<th>Record ID</th>
+<th>Matched Name</th>
+<th>Score</th>
+<th>Reasons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NYS Department of State, Division of Corporations</td>
+<td>1999-08-31</td>
+<td>2414564</td>
+<td>TULLY CONSTRUCTION &amp; HYDROPRESS ENVIRONMENTAL SERVICES, J.V., LLC</td>
+<td>0.60</td>
+<td>record name extends the subject: 'HYDROPRESS ENVIRONMENTAL SERVICES JV'</td>
+</tr>
+<tr>
+<td>NYS Department of State, Division of Corporations</td>
+<td>2023-06-01</td>
+<td>6865105</td>
+<td>TULLY CONSTRUCTION CO - THALLE CONSTRUCTION CO LLC</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CO THALLE CONSTRUCTION'</td>
+</tr>
+<tr>
+<td>NYS Department of State, Division of Corporations</td>
+<td>2007-03-19</td>
+<td>3490941</td>
+<td>TULLY CONSTRUCTION CO.-EE CRUZ &amp; COMPANY JV LLC</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COEE CRUZ&amp;COMPANY JV'</td>
+</tr>
+<tr>
+<td>NYS Department of State, Division of Corporations</td>
+<td>2016-09-29</td>
+<td>5016204</td>
+<td>TULLY CONSTRUCTION CO./INTERCOUNTY PAVING ASSOCIATES OF NY, LLC</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINTERCOUNTY PAVING ASSOCIATES OF NY'</td>
+</tr>
+<tr>
+<td>NYS Department of State, Division of Corporations</td>
+<td>2010-06-18</td>
+<td>3963487</td>
+<td>TULLY CONSTRUCTION/REN CORP.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'REN'</td>
+</tr>
+<tr>
+<td>NYS Department of State, Division of Corporations</td>
+<td>2021-12-17</td>
+<td>6352262</td>
+<td>TULLY CONSTRUCTION/RICHARDS PLUMBING JV LLC</td>
+<td>0.60</td>
+<td>record name extends the subject: 'RICHARDS PLUMBING JV'</td>
+</tr>
+<tr>
+<td>NYS Department of Taxation and Finance tax warrants (DOS notice system and Open Data)</td>
+<td>2021-05-28</td>
+<td>E-047113089-W001-7</td>
+<td>JWE CONSTRUCTION COMPANY OF TULLY, INC.</td>
+<td>0.60</td>
+<td>subject tokens contained in a longer name (token set ratio 100, token sort ratio 71)</td>
+</tr>
+<tr>
+<td>NYS Department of Taxation and Finance tax warrants (DOS notice system and Open Data)</td>
+<td>2017-07-28</td>
+<td>E-044547143-W001-5</td>
+<td>TULLY CONSTRUCTION/REN CORP.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'REN'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>2000-01-26</td>
+<td>FT_4560006974956</td>
+<td>TULLY CONSTRUCTION CI INC</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CI'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>2006-10-11</td>
+<td>2006101001441021</td>
+<td>TULLY CONSTRUCTION CO INC JOINT VENTURE A</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CO INC JOINT VENTURE A'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>2001-05-15</td>
+<td>FT_4940007655494</td>
+<td>TULLY CONSTRUCTION CO INC. JV</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CO INC JV'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>1991-04-25</td>
+<td>FT_4960004033796</td>
+<td>TULLY CONSTRUCTION CO,INC.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINC'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>1994-09-13</td>
+<td>FT_4610004416361</td>
+<td>TULLY CONSTRUCTION CO,INC.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINC'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>1993-01-19</td>
+<td>FT_4700004083870</td>
+<td>TULLY CONSTRUCTION CO.,INC.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINC'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>1996-01-31</td>
+<td>FT_4710005014171</td>
+<td>TULLY CONSTRUCTION CO.,INC.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINC'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>1993-01-19</td>
+<td>FT_4710004083871</td>
+<td>TULLY CONSTRUCTION CO.,INC.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINC'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>1992-07-24</td>
+<td>FT_4810004066981</td>
+<td>TULLY CONSTRUCTION CO.,INC.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINC'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>1993-01-19</td>
+<td>FT_4720004083872</td>
+<td>TULLY CONSTRUCTION CO.,INC.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINC'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>1996-01-29</td>
+<td>FT_4070005010307</td>
+<td>TULLY CONSTRUCTION CO.,INC.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINC'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>1993-01-19</td>
+<td>FT_4690004083869</td>
+<td>TULLY CONSTRUCTION CO.,INC.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINC'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>1993-11-24</td>
+<td>FT_4490004112149</td>
+<td>TULLY CONSTRUCTION CO.,INC.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINC'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>1996-01-31</td>
+<td>FT_4680005014168</td>
+<td>TULLY CONSTRUCTION CO.,INC.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINC'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>1996-01-31</td>
+<td>FT_4720005014172</td>
+<td>TULLY CONSTRUCTION CO.,INC.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINC'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>1992-11-19</td>
+<td>FT_4510004075651</td>
+<td>TULLY CONSTRUCTION CO.,INC.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINC'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>1994-10-26</td>
+<td>FT_4450004470445</td>
+<td>TULLY CONSTRUCTION CO.,INC.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINC'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>1991-01-09</td>
+<td>FT_4190004027319</td>
+<td>TULLY CONSTRUCTION CO.INC.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINC'</td>
+</tr>
+<tr>
+<td>NYC Department of Finance ACRIS personal property (UCC and federal liens)</td>
+<td>1991-04-25</td>
+<td>FT_4950004033795</td>
+<td>TULLY CONSTRUCTION CO.INC.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINC'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2019-12-20</td>
+<td>0702274550</td>
+<td>TULLY CONSTRUCTION CO INC PO</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CO INC PO'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2019-12-19</td>
+<td>0206275879</td>
+<td>TULLY CONSTRUCTION IND POSILLI</td>
+<td>0.60</td>
+<td>record name extends the subject: 'IND POSILLI'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2019-12-19</td>
+<td>0702274522</td>
+<td>TULLY CONSTRUCTION CO INC POS</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CO INC POS'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2018-03-30</td>
+<td>0701416660</td>
+<td>TULLY CONSTRUCTION CO INC POS</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CO INC POS'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2015-11-12</td>
+<td>0187737698</td>
+<td>TULLY CONSTRUCTION CO-EE CRUZ</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COEE CRUZ'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2014-11-07</td>
+<td>0187094591</td>
+<td>TULLY CONSTRUCTION CO EE CRUZ</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CO EE CRUZ'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2014-11-07</td>
+<td>0187072537</td>
+<td>TULLY CONSTRUCTION COMPANY JV</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COMPANY JV'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2013-10-09</td>
+<td>0182149258</td>
+<td>TULLY CONSTRUCTION CO-EE CRUZ</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COEE CRUZ'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2011-10-31</td>
+<td>0168789253</td>
+<td>TULLY CONSTRUCTION POSALLICO C</td>
+<td>0.60</td>
+<td>record name extends the subject: 'POSALLICO C'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2010-05-05</td>
+<td>0176586448</td>
+<td>TULLY CONSTRUCTION CO EE CRUZ</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CO EE CRUZ'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2010-05-05</td>
+<td>0176586439</td>
+<td>TULLY CONSTRUCTION CO EE CRUZ</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CO EE CRUZ'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2010-03-05</td>
+<td>0176574925</td>
+<td>TULLY CONSTRUCTION CO - EE CR</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CO EE CR'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2010-03-02</td>
+<td>0176522922</td>
+<td>TULLY CONSTRUCTION CO -EE CRUZ</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CO EE CRUZ'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2010-03-02</td>
+<td>0176522913</td>
+<td>TULLY CONSTRUCTION CO -EE CRUZ</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CO EE CRUZ'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2010-03-02</td>
+<td>0176522904</td>
+<td>TULLY CONSTRUCTION CO -EE CRUZ</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CO EE CRUZ'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2010-03-02</td>
+<td>0176522931</td>
+<td>TULLY CONSTRUCTION CO -EE CRUZ</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CO EE CRUZ'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2010-01-20</td>
+<td>0176554492</td>
+<td>TULLY CONSTRUCTION CO EE-CRUZ</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CO EECRUZ'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2010-01-20</td>
+<td>0176554501</td>
+<td>TULLY CONSTRUCTION CO EE CRUZ</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CO EE CRUZ'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>2008-06-12</td>
+<td>0161307264</td>
+<td>TULLY CONSTRUCTION CO.,INC.</td>
+<td>0.60</td>
+<td>record name extends the subject: 'COINC'</td>
+</tr>
+<tr>
+<td>NYC OATH hearings (ECB) and DOB-issued ECB violations</td>
+<td>1999-10-24</td>
+<td>0049288068</td>
+<td>TULLY CONSTRUCTION CON INC</td>
+<td>0.60</td>
+<td>record name extends the subject: 'CON'</td>
+</tr>
+</tbody>
+</table>
+<h2 id="related-non-adverse-filings">Related Non-Adverse Filings</h2>
+<h3>NYS Department of State, Division of Corporations (nys_dos)</h3>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Record ID</th>
+<th>Matched Name</th>
+<th>Status</th>
+<th>Amount</th>
+<th>Summary</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1978-04-06</td>
+<td>481616</td>
+<td>TULLY CONSTRUCTION CO. INC.</td>
+<td>Active</td>
+<td></td>
+<td>DOMESTIC BUSINESS CORPORATION, Nassau County, filed 1978-04-06, Active; process agent TULLY CONSTRUCTION CO. INC., 127-50 Northern Blvd, Flushing NY</td>
+<td><a href="files/evidence/nys_dos/001_inquiry_tully_construction.json">nys_dos-001</a>, <a href="files/evidence/nys_dos/008_open_data_481616.json">nys_dos-008</a>, <a href="files/evidence/nys_dos/009_status_history_481616.json">nys_dos-009</a>, <a href="files/evidence/nys_dos/010_prior_names_481616.json">nys_dos-010</a></td>
+</tr>
+</tbody>
+</table>
+<h3>NYC Department of Finance ACRIS personal property (UCC and federal liens) (nyc_acris)</h3>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Record ID</th>
+<th>Matched Name</th>
+<th>Status</th>
+<th>Amount</th>
+<th>Summary</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2001-07-11</td>
+<td>FT_4000007739700</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>UCC3 TERMINATION</td>
+<td></td>
+<td>UCC3 TERMINATION recorded 2001-07-11; parties: TULLY CONSTRUCTION CO INC (debtor) / H O PENN MACHINERY CO INC (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2001-06-21</td>
+<td>FT_4110007710011</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>UCC3 CONTINUATION</td>
+<td></td>
+<td>UCC3 CONTINUATION recorded 2001-06-21; parties: TULLY CONSTRUCTION CO INC (debtor) / ORIX CREDIT ALLIANCE, INC (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2001-06-20</td>
+<td>FT_4140007707814</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>UCC3 TERMINATION</td>
+<td></td>
+<td>UCC3 TERMINATION recorded 2001-06-20; parties: TULLY CONSTRUCTION CO INC (debtor) / CATERPILLAR FINANCIAL SERVICES CORP (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2001-05-09</td>
+<td>FT_4020007643502</td>
+<td>TULLY CONSTRUCTION CO., INC</td>
+<td>INITIAL UCC1</td>
+<td></td>
+<td>INITIAL UCC1 recorded 2001-05-09; parties: TULLY CONSTRUCTION CO., INC (debtor) / EDWARD EHRBAR, INC (secured party) / KOMATSU FINANCIAL LIMITED PARTNERSHIP (assignee)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/004_acris_master_records_for_matched_documen.json">nyc_acris-004</a>, <a href="files/evidence/nyc_acris/005_acris_all_parties_for_matched_documents.json">nyc_acris-005</a></td>
+</tr>
+<tr>
+<td>2001-04-27</td>
+<td>FT_4380007627838</td>
+<td>TULLY CONSTRUCTION CO., INC</td>
+<td>INITIAL UCC1</td>
+<td></td>
+<td>INITIAL UCC1 recorded 2001-04-27; parties: TULLY CONSTRUCTION CO., INC (debtor) / H.O. PENN MACHINERYCOMPANY, INC (secured party) / CATERPILLAR FINANCIAL SERVICES CORPORATION (assignee)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/004_acris_master_records_for_matched_documen.json">nyc_acris-004</a>, <a href="files/evidence/nyc_acris/005_acris_all_parties_for_matched_documents.json">nyc_acris-005</a></td>
+</tr>
+<tr>
+<td>2001-04-04</td>
+<td>FT_4320007593132</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>INITIAL UCC1</td>
+<td></td>
+<td>INITIAL UCC1 recorded 2001-04-04; parties: TULLY CONSTRUCTION CO INC (debtor) / H O PENN MACHINERY COMPANY INC (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2001-04-04</td>
+<td>FT_4150007593115</td>
+<td>TULLY CONSTRUCTION CO., INC.</td>
+<td>INITIAL UCC1</td>
+<td></td>
+<td>INITIAL UCC1 recorded 2001-04-04; parties: TULLY CONSTRUCTION CO., INC. (debtor) / H.O. PENN MACHINERYCOMPANY, INC (secured party) / CATERPILLAR FINANCIAL SERVICES CORPORATION (assignee)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/006_acris_master_records_for_matched_documen.json">nyc_acris-006</a>, <a href="files/evidence/nyc_acris/007_acris_all_parties_for_matched_documents.json">nyc_acris-007</a></td>
+</tr>
+<tr>
+<td>2001-03-12</td>
+<td>FT_4650007555065</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>INITIAL UCC1</td>
+<td></td>
+<td>INITIAL UCC1 recorded 2001-03-12; parties: TULLY CONSTRUCTION CO INC (debtor) / KEYCORP LEASING (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2001-03-01</td>
+<td>FT_4490007539849</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>UCC3 RELEASE/UCC AMENDMENT</td>
+<td></td>
+<td>UCC3 RELEASE/UCC AMENDMENT recorded 2001-03-01; parties: TULLY CONSTRUCTION CO INC (debtor) / HYDROPRESS ENVIRONMENTAL SERVICES INC (debtor) / COAST BUSINESS CREDIT (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2001-01-23</td>
+<td>FT_4200007486620</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>INITIAL UCC1</td>
+<td></td>
+<td>INITIAL UCC1 recorded 2001-01-23; parties: TULLY CONSTRUCTION CO INC (debtor) / KEYCORP LEASING (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2001-01-19</td>
+<td>FT_4960007483596</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>UCC3 TERMINATION</td>
+<td></td>
+<td>UCC3 TERMINATION recorded 2001-01-19; parties: TULLY CONSTRUCTION CO INC (debtor) / H O PENN MACHINERY COMPANY INC (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2001-01-19</td>
+<td>FT_4080007483608</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>UCC3 TERMINATION</td>
+<td></td>
+<td>UCC3 TERMINATION recorded 2001-01-19; parties: TULLY CONSTRUCTION CO INC (debtor) / H.O. PENN MACHINERYINC (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2001-01-19</td>
+<td>FT_4000007483600</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>UCC3 TERMINATION</td>
+<td></td>
+<td>UCC3 TERMINATION recorded 2001-01-19; parties: TULLY CONSTRUCTION CO INC (debtor) / H O PENN MACHINERY CO INC (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2001-01-08</td>
+<td>FT_4130007466313</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>UCC3 RELEASE/UCC AMENDMENT</td>
+<td></td>
+<td>UCC3 RELEASE/UCC AMENDMENT recorded 2001-01-08; parties: HYDROPRESS ENVIRONMENTAL SERVICES INC (debtor) / TULLY CONSTRUCTION CO INC (debtor) / COAST BUSINESS CREDIT (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2000-12-08</td>
+<td>FT_4940007435494</td>
+<td>TULLY CONSTRUCTION CO, INC</td>
+<td>INITIAL UCC1</td>
+<td></td>
+<td>INITIAL UCC1 recorded 2000-12-08; parties: TULLY CONSTRUCTION CO, INC (debtor) / FLEET CAPITAL CORPORATION (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/004_acris_master_records_for_matched_documen.json">nyc_acris-004</a>, <a href="files/evidence/nyc_acris/005_acris_all_parties_for_matched_documents.json">nyc_acris-005</a></td>
+</tr>
+<tr>
+<td>2000-11-14</td>
+<td>FT_4480007403048</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>UCC3 RELEASE/UCC AMENDMENT</td>
+<td></td>
+<td>UCC3 RELEASE/UCC AMENDMENT recorded 2000-11-14; parties: HYDROPRESS ENVIRONMENTAL SERVICES INC (debtor) / TULLY CONSTRUCTION CO INC (debtor) / COAST BUSINESS CREDIT (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2000-10-25</td>
+<td>FT_1150007407215</td>
+<td>TULLY CONSTRUCTION CO., INC.</td>
+<td>UCC3 TERMINATION</td>
+<td></td>
+<td>UCC3 TERMINATION recorded 2000-10-25; parties: TULLY CONSTRUCTION CO., INC. (debtor) / CORESTATES LEASING,INC (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/006_acris_master_records_for_matched_documen.json">nyc_acris-006</a>, <a href="files/evidence/nyc_acris/007_acris_all_parties_for_matched_documents.json">nyc_acris-007</a></td>
+</tr>
+<tr>
+<td>2000-10-13</td>
+<td>FT_4340007370534</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>INITIAL UCC1</td>
+<td></td>
+<td>INITIAL UCC1 recorded 2000-10-13; parties: TULLY CONSTRUCTION CO INC (debtor) / ASSOCIATES LEASING INC #9670 (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2000-10-12</td>
+<td>FT_4220007368122</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>INITIAL UCC1</td>
+<td></td>
+<td>INITIAL UCC1 recorded 2000-10-12; parties: TULLY CONSTRUCTION CO INC (debtor) / FLEET CAPITAL CORP (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2000-09-11</td>
+<td>FT_4140007326014</td>
+<td>TULLY CONSTRUCTION</td>
+<td>INITIAL UCC1</td>
+<td></td>
+<td>INITIAL UCC1 recorded 2000-09-11; parties: TULLY CONSTRUCTION (debtor) / EDWARD EHRBAR INC (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2000-09-01</td>
+<td>FT_4440007315944</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>INITIAL UCC1</td>
+<td></td>
+<td>INITIAL UCC1 recorded 2000-09-01; parties: TULLY CONSTRUCTION CO INC (debtor) / MERRILL LYNCH BUSINESS FINANCIAL SERVICES INC (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2000-08-02</td>
+<td>FT_4450007274945</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>INITIAL UCC1</td>
+<td></td>
+<td>INITIAL UCC1 recorded 2000-08-02; parties: TULLY CONSTRUCTION CO INC (debtor) / EDWARD EHRBAR INC (secured party) / ASSOCIATES COMMERCIAL CORP #9670 (assignee)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2000-06-07</td>
+<td>FT_4510007190751</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>INITIAL UCC1</td>
+<td></td>
+<td>INITIAL UCC1 recorded 2000-06-07; parties: TULLY CONSTRUCTION CO INC (debtor) / H.O. PENN MACHINERYINC (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2000-06-02</td>
+<td>FT_4680007184768</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>INITIAL UCC1</td>
+<td></td>
+<td>INITIAL UCC1 recorded 2000-06-02; parties: TULLY CONSTRUCTION CO INC (debtor) / H.O. PENN MACHINERYCO INC (secured party) / CATERPILLAR FINANCIAL SERVICES CORP (assignee)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+<tr>
+<td>2000-05-25</td>
+<td>FT_4900007173590</td>
+<td>TULLY CONSTRUCTION CO INC</td>
+<td>INITIAL UCC1</td>
+<td></td>
+<td>INITIAL UCC1 recorded 2000-05-25; parties: TULLY CONSTRUCTION CO INC (debtor) / ASSOCIATES LEASING INC #9670 (secured party)</td>
+<td><a href="files/evidence/nyc_acris/001_acris_personal_property_parties_search.json">nyc_acris-001</a>, <a href="files/evidence/nyc_acris/002_acris_master_records_for_matched_documen.json">nyc_acris-002</a>, <a href="files/evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json">nyc_acris-003</a></td>
+</tr>
+</tbody>
+</table>
+<p><em>297 more row(s) not shown; every record is in run.json and the evidence files.</em></p>
+<h3>US Department of Labor OSHA establishment inspections (osha)</h3>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Record ID</th>
+<th>Matched Name</th>
+<th>Status</th>
+<th>Amount</th>
+<th>Summary</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2025-07-17</td>
+<td>1837835.015</td>
+<td>Tully Construction Corporation</td>
+<td>CLOSED</td>
+<td>$0.00</td>
+<td>Inspection 1837835.015 opened 2025-07-17, Springfield Area Office, Planned, no violations, current penalty $0, CLOSED 2025-09-17</td>
+<td><a href="files/evidence/osha/001_search_tully_construction.html">osha-001</a>, <a href="files/evidence/osha/003_detail_1837835_015.html">osha-003</a></td>
+</tr>
+<tr>
+<td>2024-06-18</td>
+<td>1756012.015</td>
+<td>Tully Construction Co., Inc.</td>
+<td>CLOSED</td>
+<td>$0.00</td>
+<td>Inspection 1756012.015 opened 2024-06-18, Queens District Office, Fat/Cat, no violations, current penalty $0, CLOSED 2024-11-26</td>
+<td><a href="files/evidence/osha/001_search_tully_construction.html">osha-001</a>, <a href="files/evidence/osha/004_detail_1756012_015.html">osha-004</a></td>
+</tr>
+<tr>
+<td>2022-11-01</td>
+<td>1632116.015</td>
+<td>Tully Construction Co., Inc.</td>
+<td>CLOSED</td>
+<td>$0.00</td>
+<td>Inspection 1632116.015 opened 2022-11-01, Queens District Office, Prog Related, no violations, current penalty $0, CLOSED 2023-05-01</td>
+<td><a href="files/evidence/osha/001_search_tully_construction.html">osha-001</a>, <a href="files/evidence/osha/006_detail_1632116_015.html">osha-006</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="passport-sources-table">PASSPort Sources Table</h2>
+<table>
+<thead>
+<tr>
+<th>Information</th>
+<th>Determination</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outstanding ECB violations were found for Tully Construction Co., Inc. between 1999 – 2026 (960 summonses; 21 open; balance due $10,750.00).</td>
+<td>The contractor should be asked to provide status updates and proof of payment for the violations listed above. [ACCO determination to be entered by staff.]</td>
+<td>ECB / OATH</td>
+</tr>
+<tr>
+<td>An OSHA inspection dated 2025-09-19 against Tully Construction Co., Inc. was found (violations, current penalty $5,000.00, OPEN). An OSHA inspection dated 2023-05-12 against Tully Construction Co., Inc. was found (violations, current penalty $6,563.00, CLOSED).</td>
+<td>The contractor should be asked to describe the outcome of the inspection and any abatement. [ACCO determination to be entered by staff.]</td>
+<td>OSHA</td>
+</tr>
+<tr>
+<td>DDC performed searches on September 3, 2026 in the following databases: NYS DOS, NYS DTF Tax Warrants, ACRIS. No adverse information was found.</td>
+<td>N/A</td>
+<td>Other Sources</td>
+</tr>
+</tbody>
+</table>
+<h2 id="evidence-index">Evidence Index</h2>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Description</th>
+<th>Path</th>
+<th>Captured At</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nys_dos</td>
+<td>inquiry TULLY CONSTRUCTION</td>
+<td>evidence/nys_dos/001_inquiry_tully_construction.json</td>
+<td>2026-09-03T05:55:20.421236+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>open data 2414564</td>
+<td>evidence/nys_dos/002_open_data_2414564.json</td>
+<td>2026-09-03T05:55:21.736289+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>status history 2414564</td>
+<td>evidence/nys_dos/003_status_history_2414564.json</td>
+<td>2026-09-03T05:55:21.912421+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>prior names 2414564</td>
+<td>evidence/nys_dos/004_prior_names_2414564.json</td>
+<td>2026-09-03T05:55:22.026447+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>open data 6865105</td>
+<td>evidence/nys_dos/005_open_data_6865105.json</td>
+<td>2026-09-03T05:55:22.157916+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>status history 6865105</td>
+<td>evidence/nys_dos/006_status_history_6865105.json</td>
+<td>2026-09-03T05:55:22.278620+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>prior names 6865105</td>
+<td>evidence/nys_dos/007_prior_names_6865105.json</td>
+<td>2026-09-03T05:55:22.706452+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>open data 481616</td>
+<td>evidence/nys_dos/008_open_data_481616.json</td>
+<td>2026-09-03T05:55:22.840569+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>status history 481616</td>
+<td>evidence/nys_dos/009_status_history_481616.json</td>
+<td>2026-09-03T05:55:22.960188+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>prior names 481616</td>
+<td>evidence/nys_dos/010_prior_names_481616.json</td>
+<td>2026-09-03T05:55:23.150960+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>open data 3490941</td>
+<td>evidence/nys_dos/011_open_data_3490941.json</td>
+<td>2026-09-03T05:55:23.317917+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>status history 3490941</td>
+<td>evidence/nys_dos/012_status_history_3490941.json</td>
+<td>2026-09-03T05:55:23.469934+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>prior names 3490941</td>
+<td>evidence/nys_dos/013_prior_names_3490941.json</td>
+<td>2026-09-03T05:55:23.617187+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>open data 5016204</td>
+<td>evidence/nys_dos/014_open_data_5016204.json</td>
+<td>2026-09-03T05:55:23.740528+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>status history 5016204</td>
+<td>evidence/nys_dos/015_status_history_5016204.json</td>
+<td>2026-09-03T05:55:23.865380+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>prior names 5016204</td>
+<td>evidence/nys_dos/016_prior_names_5016204.json</td>
+<td>2026-09-03T05:55:24.377006+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>open data 3963487</td>
+<td>evidence/nys_dos/017_open_data_3963487.json</td>
+<td>2026-09-03T05:55:24.494402+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>status history 3963487</td>
+<td>evidence/nys_dos/018_status_history_3963487.json</td>
+<td>2026-09-03T05:55:24.726362+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>prior names 3963487</td>
+<td>evidence/nys_dos/019_prior_names_3963487.json</td>
+<td>2026-09-03T05:55:24.870788+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>open data 6352262</td>
+<td>evidence/nys_dos/020_open_data_6352262.json</td>
+<td>2026-09-03T05:55:25.090137+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>status history 6352262</td>
+<td>evidence/nys_dos/021_status_history_6352262.json</td>
+<td>2026-09-03T05:55:25.328886+00:00</td>
+</tr>
+<tr>
+<td>nys_dos</td>
+<td>prior names 6352262</td>
+<td>evidence/nys_dos/022_prior_names_6352262.json</td>
+<td>2026-09-03T05:55:25.444246+00:00</td>
+</tr>
+<tr>
+<td>nys_tax_warrant</td>
+<td>taxpayer names for 'TULLY CONSTRUCTION'</td>
+<td>evidence/nys_tax_warrant/001_taxpayer_names_for_tully_construction.html</td>
+<td>2026-09-03T05:55:21.383242+00:00</td>
+</tr>
+<tr>
+<td>nys_tax_warrant</td>
+<td>warrants for 'JWE CONSTRUCTION COMPANY OF TULLY, INC.'</td>
+<td>evidence/nys_tax_warrant/002_warrants_for_jwe_construction_company_of.html</td>
+<td>2026-09-03T05:55:21.921518+00:00</td>
+</tr>
+<tr>
+<td>nys_tax_warrant</td>
+<td>warrants for 'TULLY CONSTRUCTION/REN CORP.'</td>
+<td>evidence/nys_tax_warrant/003_warrants_for_tully_construction_ren_corp.html</td>
+<td>2026-09-03T05:55:21.989639+00:00</td>
+</tr>
+<tr>
+<td>nys_tax_warrant</td>
+<td>open data warrants (none)</td>
+<td>evidence/nys_tax_warrant/004_open_data_warrants_none.json</td>
+<td>2026-09-03T05:55:23.179491+00:00</td>
+</tr>
+<tr>
+<td>nyc_acris</td>
+<td>acris personal property parties search</td>
+<td>evidence/nyc_acris/001_acris_personal_property_parties_search.json</td>
+<td>2026-09-03T05:55:20.451979+00:00</td>
+</tr>
+<tr>
+<td>nyc_acris</td>
+<td>acris master records for matched documents</td>
+<td>evidence/nyc_acris/002_acris_master_records_for_matched_documen.json</td>
+<td>2026-09-03T05:55:20.980431+00:00</td>
+</tr>
+<tr>
+<td>nyc_acris</td>
+<td>acris all parties for matched documents</td>
+<td>evidence/nyc_acris/003_acris_all_parties_for_matched_documents.json</td>
+<td>2026-09-03T05:55:21.846223+00:00</td>
+</tr>
+<tr>
+<td>nyc_acris</td>
+<td>acris master records for matched documents</td>
+<td>evidence/nyc_acris/004_acris_master_records_for_matched_documen.json</td>
+<td>2026-09-03T05:55:22.214298+00:00</td>
+</tr>
+<tr>
+<td>nyc_acris</td>
+<td>acris all parties for matched documents</td>
+<td>evidence/nyc_acris/005_acris_all_parties_for_matched_documents.json</td>
+<td>2026-09-03T05:55:22.576709+00:00</td>
+</tr>
+<tr>
+<td>nyc_acris</td>
+<td>acris master records for matched documents</td>
+<td>evidence/nyc_acris/006_acris_master_records_for_matched_documen.json</td>
+<td>2026-09-03T05:55:23.053234+00:00</td>
+</tr>
+<tr>
+<td>nyc_acris</td>
+<td>acris all parties for matched documents</td>
+<td>evidence/nyc_acris/007_acris_all_parties_for_matched_documents.json</td>
+<td>2026-09-03T05:55:23.706570+00:00</td>
+</tr>
+<tr>
+<td>nyc_acris</td>
+<td>acris master records for matched documents</td>
+<td>evidence/nyc_acris/008_acris_master_records_for_matched_documen.json</td>
+<td>2026-09-03T05:55:24.342345+00:00</td>
+</tr>
+<tr>
+<td>nyc_acris</td>
+<td>acris all parties for matched documents</td>
+<td>evidence/nyc_acris/009_acris_all_parties_for_matched_documents.json</td>
+<td>2026-09-03T05:55:24.788555+00:00</td>
+</tr>
+<tr>
+<td>nyc_acris</td>
+<td>acris document type code table</td>
+<td>evidence/nyc_acris/010_acris_document_type_code_table.json</td>
+<td>2026-09-03T05:55:25.091345+00:00</td>
+</tr>
+<tr>
+<td>nyc_oath_ecb</td>
+<td>OATH hearings jz4z-kudi respondent_last_name like_any (1 variants)</td>
+<td>evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json</td>
+<td>2026-09-03T05:55:21.219233+00:00</td>
+</tr>
+<tr>
+<td>nyc_oath_ecb</td>
+<td>DOB ECB 6bgk-3dad respondent_name like_any (1 variants)</td>
+<td>evidence/nyc_oath_ecb/002_dob_ecb_6bgk_3dad_respondent_name_like_a.json</td>
+<td>2026-09-03T05:55:21.614552+00:00</td>
+</tr>
+<tr>
+<td>osha</td>
+<td>search TULLY CONSTRUCTION</td>
+<td>evidence/osha/001_search_tully_construction.html</td>
+<td>2026-09-03T05:55:22.695114+00:00</td>
+</tr>
+<tr>
+<td>osha</td>
+<td>detail 1851482.015</td>
+<td>evidence/osha/002_detail_1851482_015.html</td>
+<td>2026-09-03T05:55:22.754714+00:00</td>
+</tr>
+<tr>
+<td>osha</td>
+<td>detail 1837835.015</td>
+<td>evidence/osha/003_detail_1837835_015.html</td>
+<td>2026-09-03T05:55:22.807285+00:00</td>
+</tr>
+<tr>
+<td>osha</td>
+<td>detail 1756012.015</td>
+<td>evidence/osha/004_detail_1756012_015.html</td>
+<td>2026-09-03T05:55:22.860642+00:00</td>
+</tr>
+<tr>
+<td>osha</td>
+<td>detail 1669813.015</td>
+<td>evidence/osha/005_detail_1669813_015.html</td>
+<td>2026-09-03T05:55:22.924463+00:00</td>
+</tr>
+<tr>
+<td>osha</td>
+<td>detail 1632116.015</td>
+<td>evidence/osha/006_detail_1632116_015.html</td>
+<td>2026-09-03T05:55:23.054575+00:00</td>
+</tr>
+</tbody>
+</table></div>
+</article>
+</div>
+
+</main>
+<footer class="site-footer">
+  <p>Vanderbilt University, AI-CPS Lab. Research prototype built for the NYC Department of Design and Construction.</p>
+  <p>Every case is a recorded run of public records. Site generated September 30, 2026, 22:05 UTC.</p>
+</footer>
+<script src="../../assets/manifest.js"></script>
+<script src="../../assets/site.js"></script>
+</body>
+</html>

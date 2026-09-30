@@ -1,0 +1,23 @@
+{
+  "transactionID": "",
+  "timestamp": "2026-09-23T12:15:13.9831406-04:00",
+  "requestStatus": "Success",
+  "resultIndicator": "EntityMatchFound",
+  "entitySearchResultList": [
+    {
+      "entityName": "105 148TH ST., LLC",
+      "dosID": "5472481",
+      "initialFilingDate": "2019-01-10T00:00:00",
+      "county": "Queens",
+      "nameType": "ACTUAL",
+      "assumedNameID": "",
+      "nonQualifiedID": "",
+      "assumedName": "",
+      "entityType": "DOMESTIC LIMITED LIABILITY COMPANY",
+      "entityStatus": "Active",
+      "jurisdiction": "New York, United States",
+      "entityTypeCategory": "LIMITED LIABILITY COMPANY"
+    }
+  ],
+  "totalMatchingCount": 1
+}

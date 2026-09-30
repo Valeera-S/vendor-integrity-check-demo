@@ -1,0 +1,72 @@
+[
+  {
+    "corpid_num": "3490941",
+    "film_num": "070319000023",
+    "date_filed": "2007-03-19T00:00:00.000",
+    "mod_cert_code": "01DA A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "3490941",
+    "film_num": "070629000075",
+    "date_filed": "2007-06-29T00:00:00.000",
+    "mod_cert_code": "49DA A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "3490941",
+    "film_num": "110408002397",
+    "date_filed": "2011-04-08T00:00:00.000",
+    "mod_cert_code": "32DA A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "3490941",
+    "film_num": "130408002356",
+    "date_filed": "2013-04-08T00:00:00.000",
+    "mod_cert_code": "32DA A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "3490941",
+    "film_num": "160512006513",
+    "date_filed": "2016-05-12T00:00:00.000",
+    "mod_cert_code": "32DA A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "3490941",
+    "film_num": "170309006339",
+    "date_filed": "2017-03-09T00:00:00.000",
+    "mod_cert_code": "32DA A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "3490941",
+    "film_num": "190320060073",
+    "date_filed": "2019-03-20T00:00:00.000",
+    "mod_cert_code": "32DA A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "3490941",
+    "film_num": "210304060361",
+    "date_filed": "2021-03-04T00:00:00.000",
+    "mod_cert_code": "32DA A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "3490941",
+    "film_num": "230302001224",
+    "date_filed": "2023-03-02T00:00:00.000",
+    "mod_cert_code": "32DA A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "3490941",
+    "film_num": "250305004604",
+    "date_filed": "2025-03-05T00:00:00.000",
+    "mod_cert_code": "32DA A",
+    "status": "Active"
+  }
+]

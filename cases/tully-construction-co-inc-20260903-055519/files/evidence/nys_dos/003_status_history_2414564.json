@@ -1,0 +1,37 @@
+[
+  {
+    "corpid_num": "2414564",
+    "film_num": "990831000560",
+    "date_filed": "1999-08-31T00:00:00.000",
+    "mod_cert_code": "01DA A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "2414564",
+    "film_num": "991117000554",
+    "date_filed": "1999-11-17T00:00:00.000",
+    "mod_cert_code": "31DA A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "2414564",
+    "film_num": "991117000561",
+    "date_filed": "1999-11-17T00:00:00.000",
+    "mod_cert_code": "31DA A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "2414564",
+    "film_num": "030513002267",
+    "date_filed": "2003-05-13T00:00:00.000",
+    "mod_cert_code": "32DA A",
+    "status": "Active"
+  },
+  {
+    "corpid_num": "2414564",
+    "film_num": "SR-29755",
+    "date_filed": "2019-01-28T00:00:00.000",
+    "mod_cert_code": "45DA A",
+    "status": "Active"
+  }
+]

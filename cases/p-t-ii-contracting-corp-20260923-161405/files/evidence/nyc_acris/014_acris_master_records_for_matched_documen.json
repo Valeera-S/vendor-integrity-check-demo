@@ -1,0 +1,50 @@
+[
+  {
+    "document_id": "FT_4030007604403",
+    "record_type": "A",
+    "recorded_borough": "4",
+    "doc_type": "INIT",
+    "document_amt": "0",
+    "recorded_datetime": "2001-04-11T00:00:00.000",
+    "ucc_collateral": "F",
+    "rpttl_nbr": "0",
+    "modified_date": "2001-04-11T00:00:00.000",
+    "reel_yr": "0",
+    "reel_nbr": "0",
+    "reel_pg": "0",
+    "file_nbr": "01PQ05849",
+    "good_through_date": "2015-07-31T00:00:00.000"
+  },
+  {
+    "document_id": "FT_4400007267540",
+    "record_type": "A",
+    "recorded_borough": "4",
+    "doc_type": "INIT",
+    "document_amt": "0",
+    "recorded_datetime": "2000-07-26T00:00:00.000",
+    "ucc_collateral": "F",
+    "rpttl_nbr": "0",
+    "modified_date": "2000-08-02T00:00:00.000",
+    "reel_yr": "0",
+    "reel_nbr": "0",
+    "reel_pg": "0",
+    "file_nbr": "00PQ12115",
+    "good_through_date": "2015-07-31T00:00:00.000"
+  },
+  {
+    "document_id": "FT_4660007659966",
+    "record_type": "A",
+    "recorded_borough": "4",
+    "doc_type": "INIT",
+    "document_amt": "0",
+    "recorded_datetime": "2001-05-16T00:00:00.000",
+    "ucc_collateral": "F",
+    "rpttl_nbr": "0",
+    "modified_date": "2001-05-21T00:00:00.000",
+    "reel_yr": "0",
+    "reel_nbr": "0",
+    "reel_pg": "0",
+    "file_nbr": "01PQ08140",
+    "good_through_date": "2015-07-31T00:00:00.000"
+  }
+]

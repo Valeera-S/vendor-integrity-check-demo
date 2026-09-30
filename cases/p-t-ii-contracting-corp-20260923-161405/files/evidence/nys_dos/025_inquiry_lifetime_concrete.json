@@ -1,0 +1,37 @@
+{
+  "transactionID": "",
+  "timestamp": "2026-09-23T12:15:15.5810596-04:00",
+  "requestStatus": "Success",
+  "resultIndicator": "EntityMatchFound",
+  "entitySearchResultList": [
+    {
+      "entityName": "LIFETIME CONCRETE COATINGS INC.",
+      "dosID": "6013322",
+      "initialFilingDate": "2021-05-14T00:00:00",
+      "county": "Erie",
+      "nameType": "ACTUAL",
+      "assumedNameID": "",
+      "nonQualifiedID": "",
+      "assumedName": "",
+      "entityType": "DOMESTIC BUSINESS CORPORATION",
+      "entityStatus": "Active",
+      "jurisdiction": "New York, United States",
+      "entityTypeCategory": "CORPORATION"
+    },
+    {
+      "entityName": "LIFETIME CONCRETE, INC.",
+      "dosID": "2914250",
+      "initialFilingDate": "2003-06-03T00:00:00",
+      "county": "Queens",
+      "nameType": "ACTUAL",
+      "assumedNameID": "",
+      "nonQualifiedID": "",
+      "assumedName": "",
+      "entityType": "DOMESTIC BUSINESS CORPORATION",
+      "entityStatus": "Active",
+      "jurisdiction": "New York, United States",
+      "entityTypeCategory": "CORPORATION"
+    }
+  ],
+  "totalMatchingCount": 2
+}

@@ -1,0 +1,15 @@
+{
+  "_links": {
+    "self": {
+      "href": "https://52samdotgovsearch.prod.apps-internal.prod-iae.bsp.gsa.gov/sgs/v1/search?index=ex&index=ex&q=JLL%2093%20SOUTH%20COUNTRY&q=JLL%2093%20SOUTH%20COUNTRY&page=0&page=0&size=25&size=25&sort=-modifiedDate&sort=-modifiedDate&raw=false&mode=search&mode=search&qMode=ALL&qMode=ALL&is_active=true{&exactMatch}",
+      "templated": true
+    }
+  },
+  "page": {
+    "size": 0,
+    "totalElements": 0,
+    "totalPages": 0,
+    "number": 0,
+    "maxAllowedRecords": 10000
+  }
+}

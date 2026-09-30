@@ -1,0 +1,42 @@
+[
+  {
+    "corpid_num": "169574",
+    "film_num": "91338",
+    "date_filed": "1958-01-06T00:00:00.000",
+    "name_type": "A",
+    "name_status": "I",
+    "corp_name": "SLATTERY SUBSTRUCTURES, INC."
+  },
+  {
+    "corpid_num": "169574",
+    "film_num": "313831",
+    "date_filed": "1962-02-26T00:00:00.000",
+    "name_type": "A",
+    "name_status": "I",
+    "corp_name": "SLATTERY RESEARCH CORPORATION"
+  },
+  {
+    "corpid_num": "169574",
+    "film_num": "416147",
+    "date_filed": "1964-01-16T00:00:00.000",
+    "name_type": "A",
+    "name_status": "I",
+    "corp_name": "SLATTERY ASSOCIATES, INC."
+  },
+  {
+    "corpid_num": "169574",
+    "film_num": "970620000012",
+    "date_filed": "1997-06-20T00:00:00.000",
+    "name_type": "A",
+    "name_status": "I",
+    "corp_name": "SLATTERY SKANSKA INC."
+  },
+  {
+    "corpid_num": "169574",
+    "film_num": "061229000583",
+    "date_filed": "2006-12-29T00:00:00.000",
+    "name_type": "A",
+    "name_status": "A",
+    "corp_name": "SKANSKA USA CIVIL NORTHEAST INC."
+  }
+]
