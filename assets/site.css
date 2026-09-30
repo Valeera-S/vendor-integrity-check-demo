@@ -132,6 +132,9 @@ pre.error { background: var(--bg); border: 1px solid var(--bad); color: var(--ba
 .report table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 12px 0 20px; }
 .report th, .report td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; vertical-align: top; }
 .report table { overflow-wrap: normal; }
+.report a { overflow-wrap: anywhere; }
+.table-wrap { overflow-x: auto; margin: 12px 0 20px; }
+.table-wrap > table { margin: 0; }
 .report th { background: var(--bg); font-weight: 600; }
 .report code, .report pre { font-size: 13px; background: var(--bg); border-radius: 4px; }
 .report code { padding: 1px 4px; }
@@ -159,7 +162,7 @@ pre.error { background: var(--bg); border: 1px solid var(--bad); color: var(--ba
   h1 { font-size: 26px; }
   .card { padding: 16px; }
   .case { padding: 16px; }
-  table.cases, .report table { display: block; overflow-x: auto; }
+  table.cases { display: block; overflow-x: auto; }
 }
 @media print {
   .proto-banner, .site-header, .site-nav, .site-footer, .toc { display: none; }

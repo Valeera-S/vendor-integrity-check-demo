@@ -50,6 +50,19 @@
     return "info";
   }
 
+  /* "ok" and "not found" become a chip. A long status such as
+     "failed: DOB BIS returned Access Denied ..." keeps only its first word in the chip and the
+     rest as text, so the cell can wrap instead of forcing the table wider than the page. */
+  function splitStatus(raw) {
+    const text = String(raw || "").trim();
+    const cls = statusClass(text);
+    if (text.length <= 24) return { cls: cls, label: text, rest: "" };
+    const i = text.indexOf(":");
+    if (i > 0 && i < 24) return { cls: cls, label: text.slice(0, i), rest: text.slice(i + 1).trim() };
+    const sp = text.indexOf(" ");
+    return { cls: cls, label: text.slice(0, sp), rest: text.slice(sp + 1).trim() };
+  }
+
   function decorateStatusTables(root) {
     root.querySelectorAll(".report table").forEach((table) => {
       const heads = Array.from(table.querySelectorAll("th")).map((th) => th.textContent.trim());
@@ -58,12 +71,25 @@
       table.querySelectorAll("tbody tr, tr").forEach((tr) => {
         const cell = tr.children[col];
         if (!cell || cell.tagName !== "TD") return;
+        const parts = splitStatus(cell.textContent);
         const chip = document.createElement("span");
-        chip.className = "chip " + statusClass(cell.textContent);
-        chip.textContent = cell.textContent.trim();
+        chip.className = "chip " + parts.cls;
+        chip.textContent = parts.label;
         cell.textContent = "";
         cell.appendChild(chip);
+        if (parts.rest) cell.appendChild(document.createTextNode(" " + parts.rest));
       });
+    });
+  }
+
+  /* Wide report tables scroll inside their own box instead of pushing past the article. */
+  function wrapTables(root) {
+    root.querySelectorAll(".report table").forEach((table) => {
+      if (table.parentElement && table.parentElement.classList.contains("table-wrap")) return;
+      const wrap = document.createElement("div");
+      wrap.className = "table-wrap";
+      table.parentNode.insertBefore(wrap, table);
+      wrap.appendChild(table);
     });
   }
 
@@ -128,9 +154,10 @@
     });
   }
 
-  window.VIC = { canonicalKey, pickCase, applicableSources, statusClass };
+  window.VIC = { canonicalKey, pickCase, applicableSources, statusClass, splitStatus };
   document.addEventListener("DOMContentLoaded", () => {
     wireForm();
     decorateStatusTables(document);
+    wrapTables(document);
   });
 })();
