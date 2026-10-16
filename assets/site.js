@@ -156,6 +156,8 @@
 
   window.VIC = { canonicalKey, pickCase, applicableSources, statusClass, splitStatus };
   document.addEventListener("DOMContentLoaded", () => {
+    // The classic theme reuses the functions above but keeps the live tool's plain markup.
+    if (document.body.dataset.theme === "classic") return;
     wireForm();
     decorateStatusTables(document);
     wrapTables(document);

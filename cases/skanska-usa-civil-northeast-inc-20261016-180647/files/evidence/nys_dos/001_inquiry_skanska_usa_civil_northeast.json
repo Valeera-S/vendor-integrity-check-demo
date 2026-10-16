@@ -1,0 +1,23 @@
+{
+  "transactionID": "",
+  "timestamp": "2026-10-16T14:06:52.8411257-04:00",
+  "requestStatus": "Success",
+  "resultIndicator": "EntityMatchFound",
+  "entitySearchResultList": [
+    {
+      "entityName": "SKANSKA USA CIVIL NORTHEAST INC.",
+      "dosID": "169574",
+      "initialFilingDate": "1958-01-06T00:00:00",
+      "county": "Queens",
+      "nameType": "ACTUAL",
+      "assumedNameID": "",
+      "nonQualifiedID": "",
+      "assumedName": "",
+      "entityType": "DOMESTIC BUSINESS CORPORATION",
+      "entityStatus": "Active",
+      "jurisdiction": "New York, United States",
+      "entityTypeCategory": "CORPORATION"
+    }
+  ],
+  "totalMatchingCount": 1
+}

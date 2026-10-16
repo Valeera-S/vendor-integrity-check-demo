@@ -1,30 +1,30 @@
 window.VIC_MANIFEST = {
-  "generated_at": "2026-09-30T22:27:33.724662+00:00",
-  "demo_case": "p-t-ii-contracting-corp-20260923-161405",
+  "generated_at": "2026-10-16T18:20:31.613511+00:00",
+  "demo_case": "p-t-ii-contracting-corp-20261016-180132",
   "cases": [
     {
-      "case_id": "p-t-ii-contracting-corp-20260923-161405",
-      "vendor_name": "P & T II Contracting Corp.",
-      "vendor_key": "P&T2 CONTRACTING",
-      "created_at": "2026-09-23T16:16:15.499676+00:00"
-    },
-    {
-      "case_id": "amaro-building-corp-20260907-153507",
-      "vendor_name": "Amaro Building Corp",
-      "vendor_key": "AMARO BUILDING",
-      "created_at": "2026-09-07T15:37:20.555798+00:00"
-    },
-    {
-      "case_id": "tully-construction-co-inc-20260903-055519",
-      "vendor_name": "Tully Construction Co., Inc.",
-      "vendor_key": "TULLY CONSTRUCTION",
-      "created_at": "2026-09-03T05:55:25.500033+00:00"
-    },
-    {
-      "case_id": "skanska-usa-civil-northeast-inc-20260903-054333",
+      "case_id": "skanska-usa-civil-northeast-inc-20261016-180647",
       "vendor_name": "Skanska USA Civil Northeast Inc.",
       "vendor_key": "SKANSKA USA CIVIL NORTHEAST",
-      "created_at": "2026-09-03T05:43:52.825686+00:00"
+      "created_at": "2026-10-16T18:07:31.921668+00:00"
+    },
+    {
+      "case_id": "tully-construction-co-inc-20261016-180603",
+      "vendor_name": "Tully Construction Co., Inc.",
+      "vendor_key": "TULLY CONSTRUCTION",
+      "created_at": "2026-10-16T18:06:45.151842+00:00"
+    },
+    {
+      "case_id": "amaro-building-corp-20261016-180516",
+      "vendor_name": "Amaro Building Corp",
+      "vendor_key": "AMARO BUILDING",
+      "created_at": "2026-10-16T18:06:01.342376+00:00"
+    },
+    {
+      "case_id": "p-t-ii-contracting-corp-20261016-180132",
+      "vendor_name": "P & T II Contracting Corp.",
+      "vendor_key": "P&T2 CONTRACTING",
+      "created_at": "2026-10-16T18:05:13.745436+00:00"
     }
   ],
   "sources": [
