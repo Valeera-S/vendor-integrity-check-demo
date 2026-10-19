@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Protected cases, Vendor Integrity Check</title>
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body data-root="../">
+<div class="proto-banner">Prototype. Every case on this site is a recorded run from the research tool on the date shown. Nothing is searched live here. Not an official City of New York service.</div>
+<header class="site-header">
+  <a class="brand" href="../index.html">Vendor Integrity Check</a>
+  <nav class="site-nav">
+    <a href="../index.html#check">New check</a>
+    <a href="../cases/index.html">Past cases</a>
+    <a href="../index.html#about">About</a>
+  </nav>
+</header>
+<main class="page">
+
+<div id="protected-app" data-root="../">
+<noscript><p class="error">This page needs JavaScript to decrypt the protected cases.</p></noscript>
+
+<section id="lock-panel" class="card">
+  <h1>Protected cases</h1>
+  <p>These cases contain personal information, so they are stored encrypted. Enter the access code you were given. The code is used only in this browser to unlock the files; it is never sent anywhere or stored, so a refresh or a new tab asks again.</p>
+  <form id="unlock-form" autocomplete="off">
+    <label for="access-code">Access code</label>
+    <input id="access-code" name="code" type="password" autocomplete="off" required>
+    <button type="submit">Unlock</button>
+  </form>
+  <p id="unlock-error" class="unlock-error" role="alert" hidden></p>
+</section>
+
+<section id="list-panel" hidden>
+  <div class="protected-head">
+    <h1>Protected cases</h1>
+    <button type="button" id="lock-button" class="button secondary-dark">Lock</button>
+  </div>
+  <table class="cases">
+    <thead><tr><th>Vendor</th><th>Run</th><th>Subjects</th><th>Sources</th><th>Adverse findings</th><th>Manual steps</th></tr></thead>
+    <tbody id="protected-cases"></tbody>
+  </table>
+</section>
+
+<section id="case-panel" hidden>
+  <p class="protected-head">
+    <a id="back-link" href="index.html">&larr; Protected cases</a>
+    <button type="button" id="lock-button-case" class="button secondary-dark">Lock</button>
+  </p>
+  <p id="case-status" class="hint" role="status" hidden></p>
+  <div id="case-view"></div>
+  <section id="viewer-panel" class="card" hidden>
+    <div class="protected-head">
+      <h2 id="viewer-title">Evidence</h2>
+      <button type="button" id="viewer-close" class="button secondary-dark">Close</button>
+    </div>
+    <p class="hint">Shown as a static copy: scripts in saved pages do not run.</p>
+    <div id="viewer-frame-host"></div>
+  </section>
+</section>
+</div>
+
+</main>
+<footer class="site-footer">
+  <p>Vanderbilt University, AI-CPS Lab. Research prototype built for the NYC Department of Design and Construction.</p>
+  <p>Every case is a recorded run of public records. Site generated October 19, 2026, 06:07 UTC.</p>
+</footer>
+<script src="../assets/manifest.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

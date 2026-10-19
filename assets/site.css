@@ -57,7 +57,7 @@ button:disabled, input:disabled, textarea:disabled { opacity: .6; cursor: not-al
 #check-form .full { grid-column: 1 / -1; }
 #check-form .full > label { display: block; font-weight: 600; margin-bottom: 6px; }
 #check-form .full > label:has(input) { font-weight: 400; }
-input[type=text], textarea { width: 100%; font: 16px var(--font); color: var(--ink); background: var(--card); border: 1px solid var(--muted); border-radius: 6px; padding: 8px 10px; }
+input[type=text], input[type=password], textarea { width: 100%; font: 16px var(--font); color: var(--ink); background: var(--card); border: 1px solid var(--muted); border-radius: 6px; padding: 8px 10px; }
 textarea { resize: vertical; }
 input[type=checkbox] { width: 16px; height: 16px; margin: 0 6px 0 0; vertical-align: -2px; accent-color: var(--primary); }
 fieldset { border: 1px solid var(--line); border-radius: var(--radius); margin: 0 0 12px; padding: 8px 16px 12px; display: flex; flex-wrap: wrap; gap: 6px 24px; min-width: 0; }
@@ -170,3 +170,14 @@ pre.error { background: var(--bg); border: 1px solid var(--bad); color: var(--ba
   .case-layout { display: block; }
   .card, .case { border: 0; padding: 0; }
 }
+
+/* Protected cases */
+.button.secondary-dark { background: transparent; color: var(--primary); }
+.button.secondary-dark:hover { background: var(--primary); color: var(--navy-text); }
+.protected-link { margin-top: 20px; }
+.protected-head { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; }
+#unlock-form { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; }
+#unlock-form input { flex: 1 1 260px; max-width: 420px; }
+.unlock-error { color: var(--bad); font-weight: 600; margin-top: 12px; }
+
+#viewer-frame-host iframe { width: 100%; height: 70vh; border: 1px solid #ccc; background: #fff; }

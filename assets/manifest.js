@@ -1,6 +1,7 @@
 window.VIC_MANIFEST = {
-  "generated_at": "2026-10-16T18:20:31.613511+00:00",
+  "generated_at": "2026-10-19T06:07:22.633745+00:00",
   "demo_case": "p-t-ii-contracting-corp-20261016-180132",
+  "has_protected": true,
   "cases": [
     {
       "case_id": "skanska-usa-civil-northeast-inc-20261016-180647",
@@ -181,10 +182,10 @@ window.VIC_MANIFEST = {
     },
     {
       "id": "osha",
-      "name": "US Department of Labor OSHA establishment inspections",
-      "url": "https://www.osha.gov/ords/imis/establishment.html",
-      "kind": "http",
-      "coverage": "OSHA IMIS establishment search, all states, inspections opened within the configured look-back window (default 5 years)",
+      "name": "US Department of Labor OSHA inspections and violations (DOL Open Data API)",
+      "url": "https://data.dol.gov/datasets/OSHA",
+      "kind": "api",
+      "coverage": "DOL Open Data OSHA inspection and violation datasets, all states, inspections opened within the configured look-back window (default 5 years) or still open",
       "group": "Federal",
       "supports": [
         "company"
