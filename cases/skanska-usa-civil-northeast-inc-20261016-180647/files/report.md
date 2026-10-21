@@ -40,7 +40,7 @@ Decision support only. All findings must be verified by staff; the responsibilit
 | NYS DOL and WCB debarment lists, EO-192 non-responsible entities, DOL contractor registry | 1 records, 0 adverse, 0 open | NYS DOL 5-year prevailing wage debarments, WCB 1-year debarments, EO-192 non-responsible list, DOL contractor registry |
 | NYC School Construction Authority disqualified, ineligible and suspended firms | No records | SCA Disqualified Firms list on NYC Open Data (krwf-eng6): Disqualified, Ineligible and Suspended vendors; empty 'to' date means indefinite |
 | NYC Department of Finance ACRIS personal property (UCC and federal liens) | No records | ACRIS personal property documents recorded in the five boroughs, updated through good_through_date. |
-| NYC OATH hearings (ECB) and DOB-issued ECB violations | 385 records, 372 adverse, 3 open (13 to review) | OATH Hearings Division case status (all agencies) and DOB-issued ECB summonses |
+| NYC OATH hearings (ECB) and DOB-issued ECB violations | 385 records, 370 adverse, 1 open (2 awaiting hearing, not counted, 13 to review) | OATH Hearings Division case status (all agencies) and DOB-issued ECB summonses |
 | NYC Department of Buildings disciplinary actions and voluntary surrenders | No records | DOB Disciplinary Actions dataset on NYC Open Data (ndq3-kuef), mirrors the DOB web list |
 | US Department of Labor OSHA establishment inspections | Search failed: 1 of 1 OSHA searches failed (SKANSKA USA CIVIL NORTHEAST: HTTP 405); OSHA must be checked manually | OSHA IMIS establishment search, all states, inspections opened within the configured look-back window (default 5 years) |
 | SAM.gov exclusions (federal debarment and suspension) | No records | SAM.gov active exclusions, all classifications (firm, individual, special entity) |
@@ -54,8 +54,6 @@ Decision support only. All findings must be verified by staff; the responsibilit
 ##### Open
 | Date | Record ID | Matched Name | Status | Amount | Summary | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
-| 2026-10-04 | 0704356209 | SKANSKA USA CIVIL NORTHEAST IN | NEW ISSUANCE | $1,500.00 | DEPT OF TRANSPORTATION summons 0704356209, 2026-10-04, USE OPENING OF STREET W O PERMIT, penalty $1,500.00, NEW ISSUANCE | [nyc_oath_ecb-001](evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json) |
-| 2026-10-01 | 0704347793 | SKANSKA USA CIVIL NORTHEAST IN | NEW ISSUANCE | $750.00 | DEPT OF TRANSPORTATION summons 0704347793, 2026-10-01, FAIL TO HAVE NECESSARY ID MARKINGS ON DOT REQUIRED SIGNS, penalty $750.00, NEW ISSUANCE | [nyc_oath_ecb-001](evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json) |
 | 2026-07-12 | 0704261690 | SKANSKA USA CIVIL NORTHEAST IN |  |  | DEPT OF TRANSPORTATION summons 0704261690, 2026-07-12, FAILED TO COMPLY W HIGHWAY RULES STANDARD SPECS. DETAIL DRAWINGS LAWS, penalty not yet assessed, no hearing status recorded | [nyc_oath_ecb-001](evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json) |
 
 ##### Resolved
@@ -88,6 +86,14 @@ Decision support only. All findings must be verified by staff; the responsibilit
 | 2025-10-22 | 0704038336 | SKANSKA USA CIVIL NORTHEAST IN | PAID IN FULL | $1,500.00 | DEPT OF TRANSPORTATION summons 0704038336, 2025-10-22, FAILURE TO RESTORE IN KIND ALL ROADWAY PAVEMENT MARKINGS, penalty $1,500.00, PAID IN FULL | [nyc_oath_ecb-001](evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json) |
 
 _291 more row(s) not shown; every record is in run.json and the evidence files._
+
+##### Awaiting hearing (not counted against the vendor)
+| Date | Record ID | Matched Name | Status | Amount | Summary | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| 2026-10-04 | 0704356209 | SKANSKA USA CIVIL NORTHEAST IN | NEW ISSUANCE | $1,500.00 | DEPT OF TRANSPORTATION summons 0704356209, 2026-10-04, USE OPENING OF STREET W O PERMIT, penalty $1,500.00, NEW ISSUANCE | [nyc_oath_ecb-001](evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json) |
+| 2026-10-01 | 0704347793 | SKANSKA USA CIVIL NORTHEAST IN | NEW ISSUANCE | $750.00 | DEPT OF TRANSPORTATION summons 0704347793, 2026-10-01, FAIL TO HAVE NECESSARY ID MARKINGS ON DOT REQUIRED SIGNS, penalty $750.00, NEW ISSUANCE | [nyc_oath_ecb-001](evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json) |
+
+_The form's ECB "In compliance" is the compliance status with the NYC Department of Finance as shown in PASSPort, which staff must confirm; the OATH records are supporting evidence._
 
 _53 older records (2007 to 2016) not shown under the ten-year rule; see run.json_
 
@@ -142,7 +148,7 @@ _No trades entered; no qualification searches ran._
 ## PASSPort Sources Table
 | Information | Determination | Source |
 | --- | --- | --- |
-| Outstanding ECB violations were found for Skanska USA Civil Northeast Inc. between 2016 – 2026 (319 summonses; 3 open; balance due $-748.00). | The contractor should be asked to provide status updates and proof of payment for the violations listed above. [ACCO determination to be entered by staff.] | ECB / OATH |
+| Outstanding ECB violations were found for Skanska USA Civil Northeast Inc. between 2016 – 2026 (317 summonses; 1 open; balance due $0.00); 2 more awaiting a hearing (not counted). | The contractor should be asked to provide status updates and proof of payment for the violations listed above. [ACCO determination to be entered by staff.] | ECB / OATH |
 | DDC performed searches on October 16, 2026 in the following databases: NYS DOS, NYS DTF Tax Warrants, NYS DOS UCC / Federal Tax Lien, NYS DOL / WCB Debarment, SCA, ACRIS, DOB, SAM, BIC Trade Waste Denied Companies, Affiliate discovery (NYS DOS). No adverse information was found. The following searches could not be completed and must be performed manually: OSHA. The following searches must be performed manually: NYS Courts County Filing / JDLS search (New York County), News search, Lexis Accurint. | N/A | Other Sources |
 
 ## Evidence Index

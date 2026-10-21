@@ -74,6 +74,8 @@ _None._
 | 2023-03-08 | 0703193307 | AMARO BUILDING CORP | PAID IN FULL | $250.00 | DEPT OF TRANSPORTATION summons 0703193307, 2023-03-08, CONSTR MATL EQUIP W O PROPER MARKING CAPABLE TO PRODUCE A WARNING GLOW, penalty $250.00, PAID IN FULL | [nyc_oath_ecb-001](evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json) |
 | 2023-02-21 | 0703180400 | AMARO BUILDING CORP | PAID IN FULL | $750.00 | DEPT OF TRANSPORTATION summons 0703180400, 2023-02-21, OBSTRUCTION OF STREET W CONSTRUCTION MATERIALS EQUIPMENT W O PERMIT, penalty $750.00, PAID IN FULL | [nyc_oath_ecb-001](evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json) |
 
+_The form's ECB "In compliance" is the compliance status with the NYC Department of Finance as shown in PASSPort, which staff must confirm; the OATH records are supporting evidence._
+
 ### Needs Review
 _None._
 

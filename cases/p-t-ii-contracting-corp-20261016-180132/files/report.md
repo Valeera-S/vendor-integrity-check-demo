@@ -99,6 +99,8 @@ _None._
 | 2017-04-17 | 0191543606 | P AND T II CONTRACTING CORP | PAID IN FULL | $2,250.00 | NYPD TRANSPORT INTELLIGENCE DI summons 0191543606, 2017-04-17, CONSTRUCTION MATERIALS EQUIPMENT STORED ON STREET W 0 PERMIT, penalty $2,250.00, PAID IN FULL | [nyc_oath_ecb-001](evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json) |
 | 2017-04-17 | 0191543597 | P AND T II CONTRACTING CORP | PAID IN FULL | $5,000.00 | NYPD TRANSPORT INTELLIGENCE DI summons 0191543597, 2017-04-17, STREET CLOSING WITHOUT PERMIT, penalty $5,000.00, PAID IN FULL | [nyc_oath_ecb-001](evidence/nyc_oath_ecb/001_oath_hearings_jz4z_kudi_respondent_last.json) |
 
+_The form's ECB "In compliance" is the compliance status with the NYC Department of Finance as shown in PASSPort, which staff must confirm; the OATH records are supporting evidence._
+
 _32 older records (2011 to 2013) not shown under the ten-year rule; see run.json_
 
 ### Needs Review
@@ -155,6 +157,8 @@ _None._
 | 2017-01-06 | 35229627R | LENNY PEREIRA | RESOLVE | $2,400.00 | DOB ECB violation 35229627R issued 2017-01-06, Construction, 28-201.1 UNLAWFUL ACTS. FAILURE TO COMPLY WITH AN ORDER OF THE COMMISSIONER, penalty $2,400.00, RESOLVE | [nyc_oath_ecb-003](evidence/nyc_oath_ecb/003_dob_ecb_6bgk_3dad_respondent_name_like_a.json) |
 | 2016-12-05 | 35190502H | LENNY PEREIRA | RESOLVE | $2,400.00 | DOB ECB violation 35190502H issued 2016-12-05, Construction, 28-201.1 UNLAWFUL ACTS. FAILURE TO COMPLY WITH AN ORDER OF THE COMMISSIONER, penalty $2,400.00, RESOLVE | [nyc_oath_ecb-003](evidence/nyc_oath_ecb/003_dob_ecb_6bgk_3dad_respondent_name_like_a.json) |
 | 2016-12-05 | 35190501X | LENNY PEREIRA | RESOLVE | $0.00 | DOB ECB violation 35190501X issued 2016-12-05, Construction, AC 28-204.4 FAIL TO COMPLY W/COMMISSIONER ORDER TO FILE CERT OF CORRECTION W/DOB, penalty $0.00, RESOLVE | [nyc_oath_ecb-003](evidence/nyc_oath_ecb/003_dob_ecb_6bgk_3dad_respondent_name_like_a.json) |
+
+_The form's ECB "In compliance" is the compliance status with the NYC Department of Finance as shown in PASSPort, which staff must confirm; the OATH records are supporting evidence._
 
 _6 older records (2016 to 2016) not shown under the ten-year rule; see run.json_
 
@@ -222,6 +226,8 @@ _None._
 | 2019-09-20 | 046483455M | 105 148TH ST LLC | PAID IN FULL | $100.00 | DOS - ENFORCEMENT AGENTS summons 046483455M, 2019-09-20, DIRTY SIDEWALK DIRTY AREA VACANT LOT, penalty $100.00, PAID IN FULL | [nyc_oath_ecb-004](evidence/nyc_oath_ecb/004_oath_hearings_jz4z_kudi_respondent_last.json) |
 | 2019-06-16 | 046739130K | 105 148TH ST LLC | PAID IN FULL | $100.00 | SANITATION RECYCLING summons 046739130K, 2019-06-16, STORAGE OF RECEPTACLES, penalty $100.00, PAID IN FULL | [nyc_oath_ecb-004](evidence/nyc_oath_ecb/004_oath_hearings_jz4z_kudi_respondent_last.json) |
 
+_The form's ECB "In compliance" is the compliance status with the NYC Department of Finance as shown in PASSPort, which staff must confirm; the OATH records are supporting evidence._
+
 ### Needs Review
 | Source | Date | Record ID | Matched Name | Score | Reasons |
 | --- | --- | --- | --- | --- | --- |
@@ -262,7 +268,7 @@ _None._
 | NYS DOL and WCB debarment lists, EO-192 non-responsible entities, DOL contractor registry | No records | NYS DOL 5-year prevailing wage debarments, WCB 1-year debarments, EO-192 non-responsible list, DOL contractor registry |
 | NYC School Construction Authority disqualified, ineligible and suspended firms | No records | SCA Disqualified Firms list on NYC Open Data (krwf-eng6): Disqualified, Ineligible and Suspended vendors; empty 'to' date means indefinite |
 | NYC Department of Finance ACRIS personal property (UCC and federal liens) | No records | ACRIS personal property documents recorded in the five boroughs, updated through good_through_date. |
-| NYC OATH hearings (ECB) and DOB-issued ECB violations | 2 records, 2 adverse, 1 open | OATH Hearings Division case status (all agencies) and DOB-issued ECB summonses |
+| NYC OATH hearings (ECB) and DOB-issued ECB violations | 2 records, 1 adverse, 0 open (1 awaiting hearing, not counted) | OATH Hearings Division case status (all agencies) and DOB-issued ECB summonses |
 | NYC Department of Buildings disciplinary actions and voluntary surrenders | No records | DOB Disciplinary Actions dataset on NYC Open Data (ndq3-kuef), mirrors the DOB web list |
 | US Department of Labor OSHA establishment inspections | Search failed: 1 of 1 OSHA searches failed (1203 148TH ST: HTTP 405); OSHA must be checked manually | OSHA IMIS establishment search, all states, inspections opened within the configured look-back window (default 5 years) |
 | SAM.gov exclusions (federal debarment and suspension) | No records | SAM.gov active exclusions, all classifications (firm, individual, special entity) |
@@ -273,14 +279,19 @@ _None._
 #### NYC OATH hearings (ECB) and DOB-issued ECB violations (nyc_oath_ecb)
 
 ##### Open
-| Date | Record ID | Matched Name | Status | Amount | Summary | Evidence |
-| --- | --- | --- | --- | --- | --- | --- |
-| 2026-09-03 | 046995862Z | 1203 148TH ST LLC | NEW ISSUANCE | $50.00 | SANITATION OTHERS summons 046995862Z, 2026-09-03, IMPROPER RECEPTACLE FAILURE TO CONTAINERIZE - RESIDENTIAL 1ST, penalty $50.00, NEW ISSUANCE | [nyc_oath_ecb-006](evidence/nyc_oath_ecb/006_oath_hearings_jz4z_kudi_respondent_last.json) |
+_None._
 
 ##### Resolved
 | Date | Record ID | Matched Name | Status | Amount | Summary | Evidence |
 | --- | --- | --- | --- | --- | --- | --- |
 | 2020-01-02 | 046395587Y | 1203 148TH ST LLC | PAID IN FULL | $100.00 | DOS - ENFORCEMENT AGENTS summons 046395587Y, 2020-01-02, LOOSE RUBBISH, penalty $100.00, PAID IN FULL | [nyc_oath_ecb-006](evidence/nyc_oath_ecb/006_oath_hearings_jz4z_kudi_respondent_last.json) |
+
+##### Awaiting hearing (not counted against the vendor)
+| Date | Record ID | Matched Name | Status | Amount | Summary | Evidence |
+| --- | --- | --- | --- | --- | --- | --- |
+| 2026-09-03 | 046995862Z | 1203 148TH ST LLC | NEW ISSUANCE | $50.00 | SANITATION OTHERS summons 046995862Z, 2026-09-03, IMPROPER RECEPTACLE FAILURE TO CONTAINERIZE - RESIDENTIAL 1ST, penalty $50.00, NEW ISSUANCE | [nyc_oath_ecb-006](evidence/nyc_oath_ecb/006_oath_hearings_jz4z_kudi_respondent_last.json) |
+
+_The form's ECB "In compliance" is the compliance status with the NYC Department of Finance as shown in PASSPort, which staff must confirm; the OATH records are supporting evidence._
 
 ### Needs Review
 _None._
@@ -567,6 +578,8 @@ _None._
 | 2017-06-19 | 0196156878 | P AND T CONTRACTING CORP | PAID IN FULL | $1,200.00 | NYPD TRANSPORT INTELLIGENCE DI summons 0196156878, 2017-06-19, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $1,200.00, PAID IN FULL | [nyc_oath_ecb-013](evidence/nyc_oath_ecb/013_oath_hearings_jz4z_kudi_respondent_last.json) |
 | 2017-06-15 | 0196156804 | P AND T CONTRACTING CORP | PAID IN FULL | $3,600.00 | NYPD TRANSPORT INTELLIGENCE DI summons 0196156804, 2017-06-15, FAILURE TO COMPLY WITH THE TERMS AND CONDITIONS OF DOT PERMITS, penalty $3,600.00, PAID IN FULL | [nyc_oath_ecb-013](evidence/nyc_oath_ecb/013_oath_hearings_jz4z_kudi_respondent_last.json) |
 
+_The form's ECB "In compliance" is the compliance status with the NYC Department of Finance as shown in PASSPort, which staff must confirm; the OATH records are supporting evidence._
+
 _6 older records (2001 to 2009) not shown under the ten-year rule; see run.json_
 
 ### Needs Review
@@ -644,7 +657,7 @@ _None._
 | Outstanding ECB violations were found for P & T II Contracting Corp. between 2017 – 2026 (4 summonses; 1 open; balance due $0.00). | The contractor should be asked to provide status updates and proof of payment for the violations listed above. [ACCO determination to be entered by staff.] | ECB / OATH |
 | Outstanding ECB violations were found for principal Lenny Pereira between 2016 – 2017 (5 summonses; 0 open; balance due $0.00). | The contractor should be asked to provide status updates and proof of payment for the violations listed above. [ACCO determination to be entered by staff.] | ECB / OATH |
 | Outstanding ECB violations were found for affiliate 105 148TH ST., LLC in 2019 (2 summonses; 0 open; balance due $0.00). | The contractor should be asked to provide status updates and proof of payment for the violations listed above. [ACCO determination to be entered by staff.] | ECB / OATH |
-| Outstanding ECB violations were found for affiliate 1203 148TH ST., LLC between 2020 – 2026 (2 summonses; 1 open; balance due $50.00). | The contractor should be asked to provide status updates and proof of payment for the violations listed above. [ACCO determination to be entered by staff.] | ECB / OATH |
+| Outstanding ECB violations were found for affiliate 1203 148TH ST., LLC in 2020 (1 summonses; 0 open; balance due $0.00); 1 more awaiting a hearing (not counted). | The contractor should be asked to provide status updates and proof of payment for the violations listed above. [ACCO determination to be entered by staff.] | ECB / OATH |
 | Outstanding ECB violations were found for affiliate P & T CONTRACTING CORP. in 2017 (2 summonses; 0 open; balance due $0.00). | The contractor should be asked to provide status updates and proof of payment for the violations listed above. [ACCO determination to be entered by staff.] | ECB / OATH |
 | Licence status could not be verified automatically for: P & T II Contracting Corp. (NYC DOB BIS Licensing); the search failed and must be repeated by staff. | The contractor should be asked to provide proof of current licensure for the trade(s) listed above. [ACCO determination to be entered by staff.] | Licence verification |
 | DDC performed searches on October 16, 2026 on P & T II Contracting Corp., its principal(s) Lenny Pereira, and affiliate(s) 105 148TH ST., LLC, 1203 148TH ST., LLC, 155-22 COHANCY STREET LLC, 5 REMSEN LANE, LLC, JLL 93 SOUTH COUNTRY LLC, JLL RING ROAD LLC, LIFETIME CONCRETE, INC., P & T CONTRACTING CORP. in the following databases: NYS DOS, NYS DTF Tax Warrants, NYS DOL / WCB Debarment, SCA, DOB, SAM, BIC Trade Waste Denied Companies, Affiliate discovery (NYS DOS). No adverse information was found. The following searches could not be completed and must be performed manually: OSHA, NYC DOB BIS Licensing. The following searches must be performed manually: NYS UCC: check each Active federal tax lien for a Notice of Release, NYS Courts County Filing / JDLS search (New York County), News search, Lexis Accurint. | N/A | Other Sources |
