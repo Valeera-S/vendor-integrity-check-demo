@@ -1,5 +1,5 @@
 window.VIC_MANIFEST = {
-  "generated_at": "2026-10-21T23:19:53.115105+00:00",
+  "generated_at": "2026-11-02T19:02:59.548595+00:00",
   "demo_case": "p-t-ii-contracting-corp-20261016-180132",
   "has_protected": true,
   "cases": [
@@ -280,6 +280,20 @@ window.VIC_MANIFEST = {
         "land_surveying",
         "landscape_architecture"
       ]
+    },
+    {
+      "id": "news_web",
+      "name": "News and web search (adverse terms; government sites; NY newspapers)",
+      "url": "https://tavily.com",
+      "kind": "api",
+      "coverage": "Leads only: Tavily web search by name with adverse terms, on the open web, on government sites and on NY newspapers. Not a verified finding; staff must read each result. Paid databases such as Lexis are not searched.",
+      "group": "Other",
+      "supports": [
+        "company",
+        "person"
+      ],
+      "credential": false,
+      "trades": []
     }
   ],
   "normalize": {
