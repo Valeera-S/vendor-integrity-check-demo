@@ -1,5 +1,5 @@
 window.VIC_MANIFEST = {
-  "generated_at": "2026-11-04T18:22:17.124988+00:00",
+  "generated_at": "2026-11-05T16:18:45.463688+00:00",
   "demo_case": "p-t-ii-contracting-corp-20261016-180132",
   "has_protected": true,
   "cases": [

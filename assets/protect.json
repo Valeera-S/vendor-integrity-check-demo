@@ -4,6 +4,6 @@
   "hash": "SHA-256",
   "cipher": "AES-256-GCM",
   "iterations": 600000,
-  "salt": "O8NUoKaj3/AWNTJ+wv9NfA==",
-  "check": "TGohaUBA6dDCMiUB2q+bZ0GfSbm4+OtHXqdFnAnCOnUzVpu04FOtq/3isU7hQA=="
+  "salt": "aceE1g5WLVzp1HdqbBnCJA==",
+  "check": "BHYOy1y0DfyMlB0JjcoqglZ3RJv23yPE5ObMJESseklEQnVfFymiN1q6pws4QA=="
 }
